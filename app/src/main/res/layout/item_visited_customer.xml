@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="5dp"
+    android:layout_marginBottom="5dp"
+    app:cardElevation="0.5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_item_visit"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/customer_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp"
+            android:background="@drawable/bg_visited_customer"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/checkin_information_content"
+                android:gravity="center_vertical"
+                android:lineSpacingMultiplier="1.29"
+                android:paddingVertical="8dp"
+                tools:text="Công ty TNHH HumaxVina"
+                android:textColor="@color/color_text_visited_customer"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/checkin_information_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="@string/str_visited"
+                    android:drawablePadding="5dp"
+                    android:drawableStart="@drawable/ic_baseline_check_box_24"
+                    android:textColor="@color/color_white"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_checkin_time"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center_vertical"
+                    tools:text="13:30"
+                    android:drawablePadding="5dp"
+                    android:drawableStart="@drawable/ic_baseline_access_time_24"
+                    android:textColor="@color/color_white"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/customer_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="10dp"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:background="@drawable/round_corner_rectangle"
+                android:backgroundTint="#16A656"
+                android:src="@drawable/ic_location" />
+
+            <TextView
+                android:id="@+id/tv_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="7dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/color_text_gray"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_contact"
+            android:layout_below="@id/layout_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10">
+            <LinearLayout
+                android:id="@+id/layout_phone"
+                android:layout_width="0dp"
+                android:layout_weight="4.5"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout_location"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="2dp">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:background="@drawable/round_corner_rectangle"
+                    android:backgroundTint="#FF0B65AD"
+                    android:src="@drawable/ic_phone" />
+
+                <TextView
+                    android:id="@+id/tv_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="7dp"
+                    android:gravity="center_vertical"
+                    tools:text="+840987654321"
+                    android:textColor="@color/color_text_gray"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_customer"
+                android:layout_width="0dp"
+                android:layout_weight="5.5"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout_location"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="2dp">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:background="@drawable/bg_circle"
+                    android:backgroundTint="@color/color_red"
+                    android:src="@drawable/ic_person" />
+
+                <TextView
+                    android:id="@+id/tv_owner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="7dp"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:textColor="@color/color_text_gray"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_visited"
+            android:layout_below="@id/layout_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="10dp"
+            android:weightSum="10">
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/round_corner_rectangle"
+                android:backgroundTint="#F2C553"
+                android:src="@drawable/ic_visited" />
+
+            <TextView
+                android:id="@+id/tv_last_visited"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="7dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/color_text_content"
+                android:textSize="12sp"
+                android:text="@string/str_last_visited"/>
+            <TextView
+                android:id="@+id/tv_visited"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="7dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/color_text_content"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_weight="10"
+                android:maxLines="1"/>
+            <TextView
+                android:id="@+id/tvLastVisitedTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|start"
+                android:layout_marginStart="10dp"
+                android:paddingRight="10dp"
+                tools:text="21/05/2020 08:45"
+                android:textColor="@color/color_grey"
+                android:textSize="10sp"
+                android:layout_below="@+id/layout_visited"
+                android:textStyle="italic"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_sold"
+            android:layout_below="@id/layout_visited"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="10dp"
+            android:layout_marginTop="4dp">
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/round_corner_rectangle"
+                android:backgroundTint="#EAA1F7"
+                android:src="@drawable/ic_contract" />
+
+            <TextView
+                android:id="@+id/tv_sold_by"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="7dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/color_text_content"
+                android:textSize="12sp"
+                android:text="@string/str_last_sold"/>
+            <TextView
+                android:id="@+id/tv_sold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="7dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/color_text_content"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_weight="10"/>
+
+            <TextView
+                android:id="@+id/tvLastSoldTime"
+                android:layout_below="@+id/layout_sold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="21/05/2020 08:45"
+                android:layout_marginStart="10dp"
+                android:paddingRight="12dp"
+                android:textColor="@color/color_grey"
+                android:textSize="10sp"
+                android:textStyle="italic"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_sold"
+            android:layout_marginTop="3dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:id="@+id/tag_checkin"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_checkin" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="@string/str_check_in"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tag_sales"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/ic_sale" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="5dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/str_sales"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tag_report"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/ic_report_chart" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="5dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/str_report"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

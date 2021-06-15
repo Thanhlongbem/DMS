@@ -1,0 +1,95 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="@string/setting_header_tracking">
+
+        <SwitchPreferenceCompat
+            app:defaultValue="true"
+            app:key="enable_service"
+            app:title="@string/setting_enable_service" />
+
+        <SwitchPreferenceCompat
+            app:defaultValue="true"
+            app:key="post_location"
+            app:title= "Enable Post Location" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Setting">
+
+        <Preference
+            app:key="user_setting"
+            app:title="User Setting"/>
+
+        <ListPreference
+            app:key="image_options"
+            app:title="Image Quality"
+            app:entries="@array/image_option_entries"
+            app:useSimpleSummaryProvider="true"
+            app:entryValues="@array/image_option_values"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Caches">
+
+        <Preference
+            app:key="cached_size"
+            app:title="Cache Size">
+        </Preference>
+
+        <Preference
+            app:key="preload_control"
+            app:title="Preload Data">
+        </Preference>
+
+        <Preference
+            app:key="cached_control_form"
+            app:title="Control Form">
+        </Preference>
+
+        <Preference
+            app:key="cached_time_keeping"
+            app:title="Time Keeping">
+        </Preference>
+
+        <Preference
+            app:key="cached_tracking_background"
+            app:title="Tracking Background">
+        </Preference>
+
+        <Preference
+            app:key="cached_customer"
+            app:title="Customers">
+        </Preference>
+
+        <Preference
+            app:key="cached_customer_image"
+            app:title="Customer Images">
+        </Preference>
+
+        <Preference
+            app:key="cached_customer_route"
+            app:title="Customer Routes">
+        </Preference>
+
+        <Preference
+            app:key="cached_visit_customer"
+            app:title="Visit Customer">
+        </Preference>
+
+        <Preference
+            app:key="cached_image_visit"
+            app:title="Visit Customer Image">
+        </Preference>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/setting_header_user">
+        <Preference
+            app:key="key_logout"
+            app:summary="It will remove all data &amp; settings"
+            app:title="Logout">
+        </Preference>
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

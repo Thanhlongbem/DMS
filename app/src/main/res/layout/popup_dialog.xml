@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/color_white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/clSearchBar"
+        >
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtSearchCombo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="7dp"
+            android:layout_marginRight="80dp"
+            android:background="@drawable/bg_edt_round10"
+            android:drawableLeft="@drawable/ic_search"
+            android:paddingLeft="15dp"
+            android:hint="Enter to search..."
+            android:drawablePadding="10dp"
+            android:textColorHint="#858585"
+            android:textColor="@color/color_black"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:textColor="@color/color_text_white"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/edtSearchCombo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvComboDatas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/clSearchBar"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/loading_progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_margin="10dp" />
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="?colorPrimary"
+        android:fitsSystemWindows="true"
+        android:minHeight="?actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:navigationIcon="@drawable/ic_action_back">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:maxLines="2"
+            android:ellipsize="end"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/layout_base"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:background="@color/color_white"
+        android:paddingLeft="12dp">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:lineSpacingMultiplier="1.29"
+            android:paddingVertical="8dp"
+            android:textColor="@color/color_text_visited_customer"
+            android:textSize="@dimen/text_title_size"
+            android:textStyle="bold"
+            tools:text="Công ty TNHH HumaxVina"
+            />
+
+        <View
+            android:id="@+id/guide_line"
+            android:layout_width="0dp"
+            android:layout_height="10dp"
+            android:layout_toRightOf="@id/tv_unit"
+            android:layout_marginLeft="7dp"/>
+
+        <TextView
+            android:id="@+id/tv_spec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/str_item_spec"
+            android:textColor="@color/color_text_gray"
+            android:textSize="@dimen/text_standard_size"
+            android:layout_below="@id/tv_title"/>
+
+        <TextView
+            android:id="@+id/tv_itemSpec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/color_black"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_standard_size"
+            android:layout_marginLeft="4dp"
+            android:layout_below="@id/tv_title"
+            android:layout_toRightOf="@id/guide_line"/>
+
+
+        <TextView
+            android:id="@+id/tv_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/str_stock_unit"
+            android:textColor="@color/color_text_gray"
+            android:textSize="@dimen/text_standard_size"
+            android:layout_below="@id/tv_spec"/>
+
+        <TextView
+            android:id="@+id/tv_itemUnit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/color_black"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_standard_size"
+            android:layout_marginLeft="4dp"
+            android:layout_below="@id/tv_itemSpec"
+            android:layout_toRightOf="@id/guide_line"/>
+
+        <Button
+            android:id="@+id/btn_stock_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:layout_below="@id/tv_spec"
+            android:text="@string/str_stock_qty"
+            android:textColor="@color/color_text_white"
+            android:textAllCaps="false"
+            android:drawableLeft="@drawable/ic_home_24"
+            android:drawablePadding="5dp"
+            android:paddingStart="5dp"
+            android:paddingEnd="10dp"
+            android:background="@drawable/bg_edt_round10"
+            android:backgroundTint="@color/colorPrimary"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_base"
+        android:layout_marginBottom="3dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_white"
+            android:elevation="8dp" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@color/color_white"
+            app:tabIndicatorHeight="3dp"
+            app:tabSelectedTextColor="@color/colorPrimaryDark"
+            app:tabTextAppearance="@style/TabTextAppearance" />
+    </RelativeLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layout_tab" />
+
+</RelativeLayout>

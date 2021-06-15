@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg_common">
+
+    <View
+        android:id="@+id/layout_dim"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_dim_white"
+        android:translationZ="1dp"
+        android:visibility="gone"
+        />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="?colorPrimary"
+        android:fitsSystemWindows="true"
+        android:minHeight="?actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <ImageView
+            android:id="@+id/ic_more"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_action_more"/>
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/tv_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="16dp"
+        android:lineSpacingMultiplier="1.3"
+        android:text="Hello, DMS"
+        android:textColor="@color/color_text_gray"
+        android:textSize="@dimen/text_title_size" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_username"
+        android:layout_margin="8dp" />
+</RelativeLayout>

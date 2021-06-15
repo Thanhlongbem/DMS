@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/lnTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="?colorPrimary"
+            android:fitsSystemWindows="true"
+            android:minHeight="?actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:navigationIcon="@drawable/ic_action_back">
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </LinearLayout>
+
+    <include layout="@layout/search_box"
+        android:id="@+id/layout_search"
+        android:layout_below="@+id/lnTop"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layout_search"/>
+
+        <com.github.clans.fab.FloatingActionMenu
+            android:id="@+id/fab_menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:menu_animationDelayPerItem="50"
+            app:menu_backgroundColor="@color/color_dim_white"
+            app:menu_buttonSpacing="0dp"
+            app:menu_colorNormal="#0B65AD"
+            app:menu_colorPressed="#559FEF"
+            app:menu_colorRipple="#99FFFFFF"
+            app:menu_fab_size="normal"
+            app:menu_icon="@drawable/fab_add"
+            app:menu_labels_colorNormal="#FFFFFF"
+            app:menu_labels_colorPressed="#444444"
+            app:menu_labels_colorRipple="#66FFFFFF"
+            app:menu_labels_cornerRadius="12dp"
+            app:menu_labels_ellipsize="none"
+            app:menu_labels_hideAnimation="@anim/fab_slide_out_to_right"
+            app:menu_labels_margin="0dp"
+            app:menu_labels_padding="8dp"
+            app:menu_labels_paddingBottom="4dp"
+            app:menu_labels_paddingLeft="8dp"
+            app:menu_labels_paddingRight="8dp"
+            app:menu_labels_paddingTop="4dp"
+            app:menu_labels_position="left"
+            app:menu_labels_showAnimation="@anim/fab_slide_in_from_right"
+            app:menu_labels_showShadow="true"
+            app:menu_labels_singleLine="false"
+            app:menu_labels_textColor="#090909"
+            app:menu_labels_textSize="15sp"
+            app:menu_openDirection="up"
+            app:menu_shadowColor="#66000000"
+            app:menu_shadowRadius="4dp"
+            app:menu_shadowXOffset="1dp"
+            app:menu_shadowYOffset="3dp"
+            app:menu_showShadow="true"
+            tools:layout_editor_absoluteX="-16dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/btn_sort"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/icon_sort"
+                app:fab_colorNormal="#F1A365"
+                app:fab_colorPressed="#EFBA90"
+                app:fab_label="Sort Order by Distance"
+                app:fab_size="mini" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/btn_sync"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_sync"
+                app:fab_colorNormal="#13578E"
+                app:fab_colorPressed="#70ADF8"
+                app:fab_label="Data Not Synced"
+                app:fab_size="mini" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/btn_add_new"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_add_customer"
+                app:fab_colorNormal="#3BB55C"
+                app:fab_colorPressed="#75F870"
+                app:fab_label="Add New Customer"
+                app:fab_size="mini" />
+
+        </com.github.clans.fab.FloatingActionMenu>
+
+</RelativeLayout>

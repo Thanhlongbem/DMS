@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="?actionBarSize"
+        android:fitsSystemWindows="true">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/ic_back"
+            android:tint="@color/color_black"
+            />
+
+        <TextView
+            android:layout_toRightOf="@+id/img_back"
+            android:id="@+id/txt_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:ellipsize="end"
+            android:lines="1"
+            android:layout_marginRight="8dp"
+            android:text="Pick up location"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
+
+        <TextView
+            android:id="@+id/tv_choosedLocation"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bg_edt_round5_stroke2"
+            android:translationZ="100dp"
+            android:textColor="@color/color_black"
+            android:textSize="14sp"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:paddingStart="3dp"/>
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".map.MapsActivity" />
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_location_pin" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/but_my_location"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:padding="8dp"
+        android:layout_above="@+id/but_confirm"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/bg_circle"
+        android:src="@drawable/ic_my_location" />
+
+    <Button
+        android:id="@+id/but_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="32dp"
+        android:background="@drawable/bg_white_radius"
+        android:backgroundTint="@color/color_blue"
+        android:text="CONFIRM"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

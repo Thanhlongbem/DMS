@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="5dp"
+    android:layout_marginBottom="5dp"
+    app:cardElevation="0.5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_bg_white"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:id="@+id/layout_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="5"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="parent">
+
+            <ImageView
+                android:layout_width="19dp"
+                android:layout_height="19dp"
+                android:background="@drawable/icon_visit_customer"
+                android:backgroundTint="@color/color_confirm"
+                android:padding="1dp" />
+
+            <TextView
+                android:id="@+id/tv_customer_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="7dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/text_standard_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_title"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal"
+            android:paddingVertical="2dp">
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:background="@drawable/bg_circle"
+                android:backgroundTint="@color/colorPrimary"
+                android:src="@drawable/ic_location"
+                android:padding="2dp"/>
+
+            <TextView
+                android:id="@+id/tv_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="7dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/color_text_gray"
+                android:textSize="@dimen/text_standard_size"
+                android:maxLines="2"
+                android:ellipsize="end"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_contact"
+            android:layout_below="@id/layout_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10">
+            <LinearLayout
+                android:id="@+id/layout_phone"
+                android:layout_width="0dp"
+                android:layout_weight="4.5"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout_location"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal"
+                android:paddingVertical="2dp">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:background="@drawable/round_corner_rectangle"
+                    android:backgroundTint="#FF0B65AD"
+                    android:src="@drawable/ic_phone"
+                    android:padding="2dp"/>
+
+                <TextView
+                    android:id="@+id/tv_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="7dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/color_text_gray"
+                    android:textSize="@dimen/text_standard_size"
+                    android:maxLines="1"
+                    android:ellipsize="end"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_customer"
+                android:layout_width="0dp"
+                android:layout_weight="5.5"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout_location"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="2dp">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:background="@drawable/bg_circle"
+                    android:backgroundTint="#F80A0A"
+                    android:src="@drawable/ic_person" />
+
+                <TextView
+                    android:id="@+id/tv_representation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="7dp"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:textColor="@color/color_text_gray"
+                    android:textSize="@dimen/text_standard_size" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_sold"
+            android:layout_below="@id/layout_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginTop="3dp"
+            android:weightSum="10">
+
+            <ImageView
+                android:id="@+id/img_sold"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/round_corner_rectangle"
+                android:backgroundTint="#FFC107"
+                android:src="@drawable/visited_by"
+                android:tint="@color/color_white"
+                android:padding="2dp"/>
+
+            <TextView
+                android:id="@+id/tv_last_visited"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="7dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/color_text_gray"
+                android:textSize="@dimen/text_standard_size"
+                android:layout_toRightOf="@+id/img_sold"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

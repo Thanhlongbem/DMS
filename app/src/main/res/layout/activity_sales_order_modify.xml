@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        app:navigationIcon="@drawable/ic_action_back"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="?colorPrimary"
+        android:fitsSystemWindows="true"
+        android:minHeight="?actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.ziperp.dms.common.model.EditView
+        android:id="@+id/customer_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:isMandatory="true"
+        app:title="@string/str_customer_name"
+        app:hint="@string/str_enter_customer_name"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_total_amount"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/tv_total_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 VND"
+            android:layout_alignParentEnd="true"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            />
+    </RelativeLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/color_white"
+        app:tabIndicatorHeight="3dp"
+        app:tabSelectedTextColor="@color/colorPrimaryDark"
+        app:tabTextAppearance="@style/TabTextAppearance" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_bar"
+        android:layout_below="@id/layout_tab"
+        android:layout_marginTop="4dp"/>
+
+    <ProgressBar
+        android:id="@+id/loading_progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp"
+        />
+</LinearLayout>

@@ -1,0 +1,522 @@
+<resources>
+    <string name="app_name">Do DMS</string>
+
+    <string name="sort_ascending">Sort Ascending</string>
+    <string name="sort_descending">Sort Descending</string>
+    <string name="hiding_row_sample">Hiding 3. Row Sample</string>
+    <string name="showing_row_sample">Showing 3. Row Sample</string>
+    <string name="scroll_to_column_position">Scroll to 15. column position</string>
+    <string name="scroll_to_row_position">Scroll to 5. row position</string>
+    <string name="show_hide_the_column">Showing / Hiding 1. column</string>
+
+    <string-array name="moods">
+        <item />
+        <item>Happy</item>
+        <item>Sad</item>
+    </string-array>
+
+    <string-array name="gender">
+        <item />
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="items_per_page">
+        <item>10</item>
+        <item>20</item>
+        <item>25</item>
+        <item>50</item>
+        <item>All</item>
+    </string-array>
+    <string name="title_activity_login">Đăng nhập</string>
+
+    <string name="str_hello_user">Xin chào, %1$s</string>
+    <string name="enter">Enter</string>
+    <string name="str_email">Email</string>
+    <string name="str_enter_email">Enter Email</string>
+    <string name="str_password">Mật khẩu</string>
+    <string name="str_enter_password">Nhập mật khẩu</string>
+    <string name="str_login">Đăng nhập</string>
+    <string name="str_language">Ngôn ngữ</string>
+    <string name="str_server">Server: %1$s</string>
+
+    <string name="str_home">Trang chủ</string>
+    <string name="str_back">Back</string>
+    <string name="str_visit_customer">Viếng thăm</string>
+    <string name="str_sales_order">Đơn bán</string>
+    <string name="str_location">Vị trí</string>
+    <string name="str_time_keeping">Chấm công</string>
+    <string name="str_item_master">Danh mục hàng hóa</string>
+    <string name="str_sale_price_promotion">Giá bán &amp; Khyến mại</string>
+    <string name="str_customer">Khách hàng</string>
+    <string name="str_customer_detail">Chi tiết khách hàng</string>
+    <string name="str_tracking_report">Báo cáo giám sát</string>
+    <string name="str_report">Báo cáo</string>
+    <string name="str_personal_report">Báo cáo cá nhân</string>
+    <string name="str_phone">Điện thoại</string>
+    <string name="str_phone_2">Điện thoại 2</string>
+
+    <string name="str_setting">Cài Đặt</string>
+    <string name="str_add">Thêm</string>
+
+    <string name="str_check_in">Viếng thăm</string>
+    <string name="str_sales">Bán hàng</string>
+    <string name="str_visited">Đã VT</string>
+    <string name="str_not_visited">Chưa VT</string>
+    <string name="str_select_server_login">Chọn Server</string>
+    <string name="str_select_language">Chọn ngôn ngữ</string>
+    <string name="str_vietnamese">Tiếng Việt</string>
+    <string name="str_english">English</string>
+    <string name="str_language_value">English</string>
+
+    <string name="str_opening">Opening</string>
+    <string name="str_confirm">Confirmed</string>
+    <string name="str_issued">Issued</string>
+    <string name="str_stop">Stopped</string>
+    <string name="str_activated">Activated</string>
+    <string name="str_stopped">Stopped</string>
+    <string name="str_deactivated">Deactivated</string>
+
+    <string name="str_last_visited">VT lần cuối</string>
+    <string name="str_last_sold">Bán lần cuối</string>
+
+    <string name="str_not_available">Không có</string>
+    <string name="str_not_found_data">Không tìm thấy dữ liệu</string>
+    <string name="text_filter_condition">Điều kiện lọc</string>
+
+
+    <string name="str_delete">Xóa</string>
+    <string name="str_take_picture">Chụp ảnh</string>
+    <string name="str_take_note">Ghi chú</string>
+    <string name="str_more">Thêm</string>
+
+    <string name="str_detail">Chi tiết</string>
+    <string name="str_related">Liên quan</string>
+
+    <string name="str_general_info">Thông tin chung</string>
+    <string name="str_addition_info">Thông tin bổ sung</string>
+    <string name="str_address">Địa chỉ</string>
+    <string name="str_customer_description">Mô tả</string>
+
+    <string name="str_customer_name">Tên khách hàng</string>
+    <string name="str_enter_customer_name">Nhập tên KH</string>
+    <string name="str_customer_no">Mã số KH</string>
+    <string name="str_enter_customer_no">Nhập mã KH</string>
+    <string name="str_customer_code">Mã khách hàng</string>
+    <string name="str_customer_type">Loại khách hàng</string>
+    <string name="str_enter_customer_type">Nhập loại KH</string>
+    <string name="str_customer_class">Phân nhóm KH</string>
+    <string name="str_fax">Fax</string>
+    <string name="str_website">Website</string>
+    <string name="str_representation">Người đại diện</string>
+    <string name="str_license">Số giấy phép kinh doanh</string>
+    <string name="str_tax">Mã số thuế</string>
+    <string name="str_tax_rate">Tỷ lệ thuế</string>
+    <string name="str_owner">Chủ sở hữu</string>
+    <string name="str_customer_group">Nhóm khách hàng %1$s</string>
+    <string name="str_customer_group_1">Nhóm khách hàng 1</string>
+    <string name="str_customer_group_2">Nhóm khách hàng 2</string>
+    <string name="str_customer_group_3">Nhóm khách hàng 3</string>
+    <string name="str_customer_group_4">Nhóm khách hàng 4</string>
+    <string name="str_group">Nhóm khách hàng</string>
+    <string name="str_item_group">Nhóm hàng %1$s</string>
+    <string name="str_item_grade">Nhãn hàng</string>
+    <string name="str_street">Đường</string>
+    <string name="str_district">Quận/Huyện</string>
+    <string name="str_province">Tỉnh/TP</string>
+    <string name="str_country">Quốc gia</string>
+    <string name="str_remark">Ghi chú</string>
+    <string name="str_remark_for_item">Ghi chú</string>
+
+    <string name="str_route">Tuyến</string>
+    <string name="str_images">Hình ảnh</string>
+    <string name="str_notes">Ghi chú</string>
+
+    <string name="str_item_category">Ngành hàng</string>
+    <string name="str_item_brand_info">Nhãn hàng</string>
+    <string name="str_item_brand">Nhãn hàng</string>
+    <string name="str_item_model">Mẫu hàng</string>
+    <string name="str_vendor">Nhà cung cấp</string>
+    <string name="str_stock_unit">Đơn vị kho</string>
+    <string name="str_sale_unit">Đơn vị bán</string>
+    <string name="str_convolution_quality">Tỷ lệ quy đổi</string>
+    <string name="str_sale_price">Giá bán</string>
+    <string name="str_vat">VAT</string>
+    <string name="str_origin">Xuất xứ</string>
+    <string name="str_item_spec">Mô tả hàng</string>
+
+    <string name="str_route_of">Tuyến của %1$s</string>
+    <string name="str_note_of">Ghi chú của %1$s</string>
+    <string name="str_image_of">Hình ảnh của %1$s</string>
+    <string name="str_visit_day">Ngày viếng thăm: %1$s</string>
+
+    <string name="str_done">Xong</string>
+    <string name="str_edit">Sửa</string>
+    <string name="str_save">Lưu</string>
+
+    <string name="str_note_detail">Chi tiết ghi chú</string>
+    <string name="str_note_modify">Sửa ghi chú</string>
+    <string name="str_create_note">Tạo ghi chú</string>
+    <string name="str_last_modifier">Sửa lần cuối</string>
+
+    <string name="str_note_content">Nội dung</string>
+    <string name="str_note_title">Tiêu đề</string>
+    <string name="str_related_object">Đối tượng liên quan</string>
+
+    <string name="str_question_delete">Bạn có chắc muốn xóa ?</string>
+    <string name="str_yes">Đúng</string>
+    <string name="str_no">Không</string>
+
+    <string name="str_apply">Áp dụng</string>
+    <string name="str_ok">OK</string>
+    <string name="str_cancel">Bỏ</string>
+
+    <string name="str_empty">Không có dữ liệu</string>
+    <string name="str_stock_count">Kiểm kê</string>
+    <string name="str_presentation">Trình bày</string>
+    <string name="str_add_items">Thêm</string>
+    <string name="str_count_item">Kiểm đếm</string>
+    <string name="str_check_out">Check Out</string>
+    <string name="str_get_location">Lấy vị trí</string>
+    <string name="str_no_stock_count_data">Chưa có dữ liệu kiểm kê</string>
+    <string name="str_no_sale_order">Chưa có đơn hàng bán</string>
+    <string name="str_no_image">Chưa có hình ảnh</string>
+
+    <string name="str_new_customer">Khách hàng mới</string>
+    <string name="str_description_hint">Mô tả khách hàng</string>
+    <string name="str_item_count">Mặt hàng kiểm đếm</string>
+    <string name="str_select_item">Chọn mặt hàng</string>
+    <string name="str_count_unit">ĐV kiểm đếm</string>
+    <string name="str_count_unit_normal">ĐV kiểm đếm</string>
+    <string name="str_select_count_unit">Chọn Đơn vị kiểm đếm</string>
+    <string name="str_count_quantity">Số lượng kiểm đếm</string>
+    <string name="str_enter_quantity_of_item">Nhập số lượng</string>
+    <string name="str_count_quantity_wu">Số lượng kiểm đếm (Đơn vị kho)</string>
+    <string name="str_lot_serial_no">Số Lot/Serial</string>
+    <string name="str_lot_serial">Lot/Serial</string>
+    <string name="str_lot_serial_control">Lot/Serial Control</string>
+    <string name="str_enter_lot_serial_no">Nhập số Lot/Serial</string>
+    <string name="str_make_date">Ngày sản xuất</string>
+    <string name="str_enter_make_date">Chọn ngày sản xuất</string>
+    <string name="str_expiry_date">Hạn sử dụng</string>
+    <string name="str_expiry_duration">Thời hạn sử dụng</string>
+    <string name="str_enter_expiry_date">Chọn hạn sử dụng</string>
+    <string name="str_remark_of_item">Ghi chú</string>
+    <string name="str_item_stock_count">Mặt hàng kiểm đếm</string>
+    <string name="str_update_stock_count">Cập nhật kiểm đếm</string>
+    <string name="str_confirm_order">Xác nhận</string>
+    <string name="str_unapply_promo">Chưa xác nhận CTKM</string>
+    <string name="str_issue_handling">Issue Handling</string>
+    <string name="str_get_gift">Lấy quà</string>
+    <string name="str_last_price">Tổng tiền</string>
+    <string name="str_salesman">Người bán</string>
+    <string name="str_contact">Liên hện</string>
+    <string name="str_common_info">Thông tin chung</string>
+    <string name="str_items">Mặt hàng</string>
+    <string name="str_order_items">Hàng Bán</string>
+    <string name="str_order_date">Ngày đặt hàng</string>
+    <string name="str_gifts">Quà tặng</string>
+    <string name="str_sales_department">Bộ phận bán</string>
+    <string name="str_sales_channel">Kênh bán</string>
+    <string name="str_prepaid_amount">Tổng tiền đặt cọc</string>
+    <string name="str_prepaid_rate">Tỷ lệ đặt cọc</string>
+    <string name="str_payment_term">Điều kiện thanh toán</string>
+    <string name="str_payment_information">Thông tin thanh toán</string>
+    <string name="str_addition_information">Thông tin bổ sung</string>
+    <string name="str_po_cn">Bảng giá bán/Hợp đồng</string>
+    <string name="str_contact_name">Người liên hệ</string>
+    <string name="str_contact_phone">SĐT liên hệ</string>
+    <string name="str_contact_phone_no">SĐT liên hệ</string>
+    <string name="str_project">Dự án</string>
+    <string name="str_project_name">Tên dự án</string>
+    <string name="str_currency">Tiền tệ</string>
+    <string name="str_ex_rate">Tỷ giá</string>
+    <string name="str_confirmer">Người xác nhận</string>
+    <string name="str_confirm_date">Ngày xác nhận</string>
+    <string name="str_creator">Người tạo</string>
+    <string name="str_create_date">Ngày tạo</string>
+    <string name="str_delivery_information">Thông tin giao hàng</string>
+    <string name="str_receiver">Người nhận</string>
+    <string name="str_receiver_phone_num">SĐT người nhận</string>
+    <string name="str_delivery_address">Địa chỉ giao hàng</string>
+    <string name="str_delivery_time">Thời gian giao hàng</string>
+    <string name="str_ship_method">Phương thức giao hàng</string>
+    <string name="str_new_order">Đơn hàng mới</string>
+    <string name="str_new_sales_order">Đơn hàng mới</string>
+    <string name="str_delete_order">Xóa đơn hàng</string>
+    <string name="str_new_gift">Quà tặng mới</string>
+    <string name="str_delete_gift">Xóa quà tặng</string>
+    <string name="str_add_item_sales">Thêm hàng bán</string>
+    <string name="str_add_accessory">Thêm phụ kiện</string>
+    <string name="str_edit_accessory">Sửa phụ kiện</string>
+    <string name="str_sales_unit">Đơn vị bán</string>
+    <string name="str_select_sales_unit">Chọn đơn vị bán</string>
+    <string name="str_stocks_unit">Đơn vị kho</string>
+    <string name="str_discount">Giảm giá</string>
+    <string name="str_discount_by_rate">Giảm theo Tỷ lệ</string>
+    <string name="str_discount_by_amount">Giảm theo lượng</string>
+    <string name="str_discount_rate">Tỷ lệ giảm giá (%)</string>
+    <string name="str_enter_discount_rate">Nhập Tỷ lệ</string>
+    <string name="str_discount_amount">Lượng giảm giá</string>
+    <string name="str_total_amount">Tổng tiền</string>
+    <string name="str_enter_discount_amount">Nhập lượng giảm giá</string>
+    <string name="str_warehouse">Kho xuất</string>
+    <string name="str_select_warehouse">Chọn kho xuất</string>
+    <string name="str_good_type">Loại hàng</string>
+    <string name="str_sales_qty">SL bán</string>
+    <string name="str_sales_quantity">Số lượng bán</string>
+    <string name="str_select_sales_quantity">Nhập số lượng bán</string>
+    <string name="str_qty_wu">SL (ĐV kho)</string>
+    <string name="str_quantity_wu">SL (ĐV kho)</string>
+    <string name="str_sales_price">Giá bán</string>
+    <string name="str_sales_std_price">Giá bán TC</string>
+    <string name="str_buy_std_price">Giá mua TC</string>
+    <string name="str_avail_qty">SL có sẵn</string>
+    <string name="str_vat_rate">Tỷ lệ VAT</string>
+    <string name="str_vat_sales_price">VAT bao gồm giá bán</string>
+    <string name="str_vat_purchasing_price">VAT Include Purchasing Price</string>
+    <string name="str_unit">Đơn vị</string>
+    <string name="str_unit_price">Giá bán</string>
+    <string name="str_select_unit_price">Chọn giá bán</string>
+    <string name="str_quantity">Số lượng</string>
+    <string name="str_parent_item">Mặt hàng cha</string>
+    <string name="str_item_parent">Mặt hàng cha</string>
+    <string name="str_select_item_parent">Chọn mặt hàng cha</string>
+    <string name="str_promotion">CTKM</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="str_all_video">Tất cả video</string>
+    <string name="str_bookmarks">Đánh dấu</string>
+    <string name="str_recently_played">Gần đây</string>
+    <string name="str_item_sales">Mặt hàng bán</string>
+    <string name="str_available_stock">Tồn kho</string>
+    <string name="str_add_order_item">Thêm đơn hàng</string>
+    <string name="str_wu_issue_type">Loại kho xuất</string>
+    <string name="str_company_wu">Kho công ty</string>
+    <string name="str_distributor_wu">Kho nhà phân phối</string>
+    <string name="str_business_unit">Đơn vị kinh doanh</string>
+    <string name="str_stock_quantity">Tồn kho</string>
+    <string name="str_stock_qty">Tồn kho</string>
+    <string name="str_stock_qty_dot">Tồn kho</string>
+    <string name="str_stk_qty">Tồn kho</string>
+    <string name="str_stock_qty_by_ls">Tồn theo Lot/Serial</string>
+
+
+    <string name="str_accessory_version">Phiên bản phụ kiện</string>
+    <string name="str_select_version">Chọn phiên bản</string>
+    <string name="str_item_accessory">Phụ kiện</string>
+    <string name="str_select_item_accessory">Chọn phụ kiện</string>
+    <string name="str_accessory_unit">Đơn vị tính</string>
+    <string name="str_select_accessory_unit">Chọn đơn vị tính</string>
+
+    <string name="gift_name">Tên quà tặng</string>
+    <string name="gift_unit">Đơn vị tính</string>
+
+
+    <!-- Preference Service -->
+    <string name="setting_header_tracking">Tracking Location</string>
+    <string name="setting_enable_service">Enable Service</string>
+
+    <!-- Preference Logout -->
+    <string name="setting_header_user">Thông tin người dùng</string>
+    <string name="setting_logout">Đăng xuất</string>
+
+    <!--    Setting -->
+    <string name="setting_map_type">Messages</string>
+
+
+    <string name="str_visit_info">Thông tin VT</string>
+    <string name="str_visit_remark">Ghi chú VT</string>
+    <string name="str_confirmed">Đã xác nhận</string>
+    <string name="str_relocate">Định vị lại</string>
+    <string name="str_upload_image">Tải ảnh lên</string>
+    <string name="str_file_name">Tên ảnh</string>
+    <string name="str_file_note">Ghi chú</string>
+    <string name="str_enter_delivery_address">Nhập địa chỉ giao hàng</string>
+    <string name="str_phone_number1">Điện thoại</string>
+    <string name="str_phone_number2">Điện thoại 2</string>
+    <string name="str_item_name">Tên hàng (tiếng Anh)</string>
+    <string name="str_item_type">Phận loại tài sản</string>
+    <string name="str_item_status">Trạng thái hàng hóa</string>
+    <string name="str_pic">Người phụ trách</string>
+    <string name="str_sales_purchasing">Thuộc tính mua &amp; bán</string>
+    <string name="str_default_purchase_unit">Đơn vị mua mặc định</string>
+    <string name="str_default_sales_unit">Đơn vị bán mặc định</string>
+    <string name="str_default_vendor">Nhà cung cấp mặc định</string>
+    <string name="str_default_currency">Tiền tệ mặc định</string>
+    <string name="str_default_maker">Hãng sản xuất mặc định</string>
+    <string name="str_lead_time">Lead Time (Ngày)</string>
+    <string name="str_hs_no">Số HS</string>
+    <string name="str_other_info">Thông tin khác</string>
+    <string name="str_vendor_warranty_period">Thời hạn bảo hành (Hãng)</string>
+    <string name="str_customer_warranty_period">Thời hạn bảo hành (Khách)</string>
+    <string name="str_keeping_condition">Điều kiện bảo quản</string>
+    <string name="str_use">Sử dụng</string>
+    <string name="str_not_use">Không sử dụng</string>
+    <string name="str_mfg_date">Mfg.Date</string>
+    <string name="str_exp_date">Exp.Date</string>
+    <string name="str_gender">Giới tính</string>
+    <string name="str_male">Nam</string>
+    <string name="str_female">Nữ</string>
+    <string name="str_birthday_establish">Ngày sinh - Thành lập</string>
+    <string name="str_customer_phone_no">SĐT Khách hàng</string>
+    <string name="str_create_sale_item">Tạo mặt hàng bán</string>
+    <string name="str_edit_sale_item">Sửa mặt hàng bán</string>
+    <string name="str_sale_item">Mặt hàng bán</string>
+    <string name="str_total_time">Tổng thời gian</string>
+    <string name="str_finish">Kết thúc</string>
+    <string name="str_start">Bắt đầu</string>
+    <string name="str_check_in_note">Ghi chú Check-in</string>
+    <string name="str_check_out_note">Ghi chú Check-out</string>
+    <string name="str_owner_name">Sở hữu: %1$s</string>
+    <string name="str_error_message">Something went wrong!</string>
+    <string name="str_error_detect_location">Cannot detect your location! Please enable GPS of your device before continue this action</string>
+
+    <string name="str_information">Thông tin</string>
+    <string name="str_success">Thành công</string>
+    <string name="str_error">Lỗi</string>
+    <string name="str_close">Đóng</string>
+
+    <string name="str_staff_activities">Hoạt động nhân viên</string>
+    <string name="str_tracking_staff_location">Giám sát vị trí</string>
+    <string name="str_tracking_visit_customer">Giám sát viếng thăm</string>
+    <string name="str_tracking_picture">Giám sát chụp ảnh khách hàng</string>
+    <string name="str_sales_report">Báo cáo bán hàng</string>
+    <string name="str_tracking_report_title">Báo cáo giám sát &amp; bán hàng</string>
+    <string name="str_plan">Kế hoạch</string>
+    <string name="str_actual">Thực tế</string>
+    <string name="str_location_on_map">Định vị</string>
+    <string name="str_direct_to_location">Chỉ đường</string>
+    <string name="str_new_customer_not_order">KH mới &amp; KH chưa mua</string>
+    <string name="str_staff_sales_result">Kết quả bán hàng theo NV</string>
+    <string name="str_point_of_sales">New Point Of Sales Summary</string>
+    <string name="str_daily_performance">Đơn hàng và hiệu quả làm việc hằng ngày</string>
+    <string name="str_summation_report">Báo cáo tổng hợp theo KH</string>
+    <string name="str_sales_effective">Sales Effective On Route</string>
+    <string name="str_user_infomation">Thông tin cá nhân</string>
+    <string name="str_change_pass">Thay đổi mật khẩu</string>
+    <string name="str_sync_data_to_server">Đồng bộ dữ liệu lên server</string>
+    <string name="str_data_not_synced">Dữ liệu chưa đồng bộ</string>
+    <string name="str_presenation_management">Quản lý bài thuyết trình</string>
+    <string name="str_id_no">Số ID</string>
+    <string name="str_birthday">Ngày sinh</string>
+    <string name="str_marriage_status">Tình trạng hôn nhân</string>
+    <string name="str_blood_type">Nhóm máu</string>
+    <string name="str_old_password">Mật khẩu cũ</string>
+    <string name="str_new_password">Mật khẩu mới</string>
+    <string name="str_confirm_password">Xác nhận mật khẩu</string>
+    <string name="str_edit_profile">Chỉnh sửa hồ sơ</string>
+    <string name="str_update_password">Cập nhật mật khẩu</string>
+
+    <string name="str_vs_of_route_not_visit">KH trên tuyến chưa VT</string>
+    <string name="str_vs_in_route">Viếng thăm đúng tuyến</string>
+    <string name="str_vs_not_in_route">Viếng thăm không đúng tuyến</string>
+    <string name="str_vs_have_image">Viếng thăm có hình ảnh</string>
+    <string name="str_vs_no_image">Viếng thăm không có hình ảnh</string>
+    <string name="str_vs_have_order">Viếng thăm có đơn hàng</string>
+    <string name="str_vs_not_order">Viếng thăm không có đơn hàng</string>
+    <string name="str_vs_right_location">Viếng thăm hợp lệ</string>
+    <string name="str_vs_wrong_location">Viếng thăm không hợp lệ</string>
+
+    <string name="str_right_location">Đúng vị trị</string>
+    <string name="str_wrong_location">Sai vị trí</string>
+    <string name="str_right_route">Đúng Tuyến</string>
+    <string name="str_wrong_route">Sai Tuyến</string>
+
+    <string name="str_total_cst_visited">Tổng số KH Viếng thăm</string>
+    <string name="str_total_visit_has_pic">Số lần VT có hình ảnh</string>
+    <string name="str_total_visit_no_pic">Số lần VT không có hình ảnh</string>
+    <string name="str_total_pic">Tổng số hình ảnh đã chụp</string>
+
+    <string name="str_total_sales_amount">Tổng doanh số bán</string>
+    <string name="str_total_sales_quantity">Tổng số lượng bán</string>
+    <string name="str_total_sales_order">Tổng số đơn hàng</string>
+    <string name="str_customer_not_order">KH chưa mua</string>
+    <string name="str_result_summation">Tổng hợp kết quả</string>
+    <string name="str_result_detail">Chi tiết kết quả</string>
+
+    <string name="str_sales_and_visit">Bán hàng &amp; VT</string>
+    <string name="str_dept_staff">Bộ phận/Nhân viên</string>
+    <string name="str_visit">Viếng thăm</string>
+    <string name="str_order">Đơn hàng</string>
+    <string name="str_morning">Sáng</string>
+    <string name="str_afternoon">Chiều</string>
+    <string name="str_km">Km</string>
+
+    <string name="str_your_activity">Hoạt động của bạn</string>
+    <string name="str_visit_summation">Kết quả đi tuyến</string>
+    <string name="str_visit_customer_detail">Viếng thăm khách hàng</string>
+    <string name="str_timekeeping_diary">Nhật ký chấm công</string>
+    <string name="str_your_sales_result">Kết quả bán hàng của bạn</string>
+    <string name="str_kpi_target">Chỉ tiêu KPI</string>
+    <string name="str_KPI_important_item">KPI sản phẩm trọng tâm</string>
+    <string name="str_monthly_summary">Tổng hợp dữ liệu trong tháng</string>
+
+    <string name="str_invalid_check_in">Sai số khoảng cách</string>
+    <string name="str_you_are_here">Bạn đang ở đây</string>
+    <string name="str_customer_position">Vị trí khách hàng</string>
+    <string name="str_cannot_calculate_distance">Không thể tính được khoảng cách giữa bạn và khách hàng</string>
+    <string name="str_invalid_checkin_message">Vị trí của bạn đang cách vị trí khách hàng là %1$s m. Bạn nên thử lấy lại vị trí hoặc checkin với sai số này hoặc bỏ qua</string>
+
+    <string name="str_begin_month">Đầu kỳ</string>
+    <string name="str_new_open">Mới mở</string>
+    <string name="str_end_month">Cuối kỳ</string>
+    <string name="str_day">Ngày</string>
+    <string name="str_tk_check_in">Vào</string>
+    <string name="str_tk_check_out">Ra</string>
+    <string name="str_late">Đi muộn</string>
+    <string name="str_early">Về sớm</string>
+    <string name="str_hours">Thời gian</string>
+    <string name="str_total_work_time">Tổng TG làm việc</string>
+    <string name="str_numb_of_late">Số lần đi muộn</string>
+    <string name="str_numb_of_early">Số lần về sớm</string>
+    <string name="str_times">Lần</string>
+    <string name="str_total">Tổng</string>
+    <string name="str_no_">STT</string>
+    <string name="str_by_customer">Theo khách hàng</string>
+    <string name="str_by_item">Theo mặt hàng</string>
+    <string name="str_sales_point_customer">Điểm bán/Khách hàng mới</string>
+    <string name="str_sales_result">Kết quả bán hàng</string>
+    <string name="str_numb_sales_order">Số lượng đơn hàng</string>
+    <string name="str_numb_on_route">Khách hàng trên tuyến</string>
+    <string name="str_customer_visited">Khách hàng đã viếng thăm</string>
+    <string name="str_customer_not_visited">Khách hàng chưa viếng thăm</string>
+    <string name="str_numb_visited_time">Số lượt viếng thăm</string>
+    <string name="str_visit_right_route">Viếng thăm đúng tuyến</string>
+    <string name="str_visit_wrong_route">Viếng thăm ngoại tuyến</string>
+    <string name="str_visit_right_location">Viếng thăm hợp lệ</string>
+    <string name="str_visit_wrong_location">Viếng thăm không hợp lệ</string>
+    <string name="str_morning_visit">Viếng thăm sáng</string>
+    <string name="str_afternoon_visit">Viếng thăm chiều</string>
+    <string name="str_visit_with_order">Viếng thăm có đơn</string>
+    <string name="str_total_move_distance">Quãng đường di chuyển</string>
+    <string name="str_your_performance">Năng suất của bạn</string>
+    <string name="str_item">Mặt hàng</string>
+    <string name="str_qty">Số lượng</string>
+    <string name="str_orders">Đơn hàng</string>
+    <string name="str_debt">Nợ</string>
+    <string name="str_stock">Kho</string>
+    <string name="str_reward">Thưởng</string>
+    <string name="str_kpi">KPI</string>
+    <string name="str_visit_times">Viếng thăm</string>
+    <string name="str_in_period">Trong kỳ</string>
+    <string name="str_uncollected">Phải thu</string>
+    <string name="str_total_quantity">Tổng số lượng</string>
+    <string name="str_begin">Đầu kỳ</string>
+    <string name="str_end">Cuối kỳ</string>
+    <string name="str_paid_rate">Thanh toán/Còn nợ</string>
+    <string name="str_total_customer">Tổng KH</string>
+    <string name="str_customer_order">KH đặt</string>
+    <string name="str_number_order">SL đơn</string>
+    <string name="str_order_qty">SL bán</string>
+
+    <string name="str_search_sp_promotion">Tra cứu giá bán &amp; CTKM</string>
+    <string name="str_sales_price_list">Danh sách bảng giá bán</string>
+    <string name="str_sales_price_list_detail">Chi tiết bảng giá</string>
+    <string name="str_unit_applied">Đơn vị áp dụng</string>
+    <string name="str_promotion_list">Danh sách chương trình khuyến mại</string>
+    <string name="str_promotion_list_detail">Chi tiết chương trình khuyến mại</string>
+    <string name="str_action">Thực hiện</string>
+    <string name="str_condition">Điều kiện thực hiện</string>
+    <string name="str_no_gift">Không có quà tặng nào</string>
+
+</resources>

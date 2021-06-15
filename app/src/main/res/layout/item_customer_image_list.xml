@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="4dp"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/round_bg_white"
+        android:padding="7dp">
+
+        <RelativeLayout
+            android:id="@+id/layout_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp">
+
+            <ImageView
+                android:id="@+id/imgLinear"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:id="@+id/img_no_synchronized"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerInParent="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/icon_not_synchonized"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tv_NameLinear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toLeftOf="@+id/tv_fileLength"
+            android:layout_toRightOf="@id/layout_image"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/color_black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_TimeLinear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="3dp"
+            android:layout_toRightOf="@id/layout_image"
+            android:textColor="@color/color_black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_fileLength"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="15dp"
+            android:textColor="@color/color_black"
+            android:textSize="14sp"
+            tools:text="150 kb" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="1000dp"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_red">
+
+            <TextView
+                android:id="@+id/btn_delete"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/str_delete"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+        </FrameLayout>
+    </FrameLayout>
+</LinearLayout>

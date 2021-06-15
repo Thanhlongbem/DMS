@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tv_videoName"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#C1C1C1"
+    android:paddingStart="16dp"
+    android:paddingEnd="1dp"
+    android:textColor="@color/color_black"
+    android:textSize="16sp"
+    android:textStyle="bold"
+    android:text="Header"
+    tools:visibility="visible"
+    android:minHeight="50dp"
+    android:gravity="center_vertical"/>

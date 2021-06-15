@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ziperp.dms">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+
+    <uses-feature android:name="android.hardware.camera.any" />
+    <uses-feature
+        android:name="android.hardware.camera.raw"
+        android:required="false" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:launchMode="singleTask"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".main.user.view.CachedDataActivity"></activity>
+
+        <service
+            android:name=".core.tracking.DmsService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".common.activity.PickLocationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".common.activity.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".camera.CameraActivity"
+            android:clearTaskOnLaunch="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/CameraTheme" />
+        <activity
+            android:name=".core.form.combopopup.view.ComboPopupActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleDialog" />
+        <activity
+            android:name=".main.login.view.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
+        <activity
+            android:name=".common.activity.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".common.table.view.TableViewActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDnpCmH7fS139CKxUrQxVZLd2qqgZ9zaoE" />
+
+        <activity
+            android:name=".main.home.HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".common.activity.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.user.view.MoreActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.user.view.UserInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.user.view.UserInfoModifyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.user.view.ChangePasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.saleorder.view.SaleOrderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.visitcustomer.view.VisitedCustomerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ziperp.dms.main.customer.list.view.CustomerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.customer.customerdetail.view.CustomerDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.customer.customerdetail.view.CustomerModifyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.customer.customerroute.CustomerRouteActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.customer.customernote.view.CustomerNoteActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.customer.customernote.view.NoteDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.customer.customernote.view.NoteModifyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.customer.customerimage.CustomerImageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.itemmaster.view.ItemMasterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.itemmaster.view.ImagesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.itemmaster.view.ItemMasterDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.itemmaster.view.StockQuantityActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".core.form.dialogpopup.view.DialogPopupActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.visitcustomer.view.CheckinCheckoutActivity"
+            android:theme="@style/CheckInTheme"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.visitcustomer.view.StockCountModifyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.saleorder.view.SalesOrderDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.visitcustomer.view.PresenterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.saleorder.modify.OrderItemModifyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.saleorder.modify.SalesOrderModifyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.saleorder.modify.AccessoryModifyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.timekeeping.view.TimekeepingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".camera.ImageModifyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.trackingreports.TrackingReportsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.trackingreports.staff.view.TrackingStaffActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.trackingreports.staff.view.TrackingStaffDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.trackingreports.visitcustomer.view.TrackingVisitCustomerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.trackingreports.visitcustomer.view.TrackingVSDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.trackingreports.picture.view.TrackingPictureActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.trackingreports.picture.view.TrackingPictureDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.trackingreports.customernotorder.view.NewCstNotOrderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.trackingreports.salesresult.view.SalesResultActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.trackingreports.dailyperformance.view.DailyPerformanceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.trackingreports.reportsummation.view.ReportSummationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.trackingreports.salesonroute.view.SalesOnRouteActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.trackingreports.newpoint.view.NewSalesPointActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.personalreport.PersonalReportsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.personalreport.visitresult.VisitResultActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.personalreport.visitdetail.view.VisitDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.personalreport.timekeeping.view.TKDiaryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.personalreport.salesresult.view.YourSalesResultActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.personalreport.datasummary.view.DataSummaryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.salespricepromotion.view.SalesPricePromotionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.salespricepromotion.view.salesprice.SalesPriceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.salespricepromotion.view.salesprice.SalesPriceInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.salespricepromotion.view.promotion.PromotionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.salespricepromotion.view.promotion.PromotionInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.canhub.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat"
+            android:screenOrientation="portrait"/>
+
+
+        <receiver android:name=".core.tracking.TransitionsReceiver">
+            <intent-filter>
+                <action android:name="com.ziperp.dms.TRANSITIONS_RECEIVER_ACTION" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

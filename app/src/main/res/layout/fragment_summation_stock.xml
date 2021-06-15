@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/layout_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#816E6E6E"
+        android:layout_marginBottom="1px"
+        android:orientation="horizontal"
+        android:paddingHorizontal="3dp"
+        android:paddingVertical="4dp"
+        android:weightSum="10">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="@string/str_items"
+            android:paddingStart="2dp"
+            android:paddingRight="5dp"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/text_sub_info_size" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:text="@string/str_unit"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingStart="4dp"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/text_sub_info_size"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/str_lot_serial"
+            android:paddingStart="4dp"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/text_sub_info_size"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/str_expiry_date"
+            android:paddingStart="2dp"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/text_sub_info_size"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingStart="2dp"
+            android:text="@string/str_qty"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/text_sub_info_size"
+            android:gravity="center_vertical"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_header"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#816E6E6E"
+        android:layout_alignParentBottom="true"
+        android:padding="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_total"
+            android:textColor="@color/color_black"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_standard_size"
+            />
+        <TextView
+            android:id="@+id/tv_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:textColor="@color/color_black"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_standard_size"
+            />
+    </RelativeLayout>
+    <ProgressBar
+        android:id="@+id/loading_progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:visibility="gone" />
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_white"
+    android:paddingTop="10dp">
+
+    <LinearLayout
+        android:id="@+id/layoutContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvConditionNameFilter"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4.5"
+            android:textColor="@color/color_text_gray"
+            android:textSize="@dimen/text_standard_size"
+            android:text="Sales Department"
+            android:gravity="start|center_vertical"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvValueFilter"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4.5"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_standard_size"
+            android:text="0000ac"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:paddingRight="10dp"
+            android:gravity="start|center_vertical"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgTypeFilter"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/icon_calendar"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_text_gray"
+        android:layout_below="@+id/layoutContent"
+        android:layout_marginTop="10dp"/>
+
+</RelativeLayout>

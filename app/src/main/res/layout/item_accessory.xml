@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginBottom="7dp"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_edt_round10"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/line_25"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.2" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/line_50"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.4" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/line_70"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.65" />
+
+        <TextView
+            android:id="@+id/tv_orderItemName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="ANTS - Doppelherz Aktiv Anti Stress"
+            android:textColor="@color/color_black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_salesUnitTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/str_sales_unit"
+            android:textColor="@color/color_text_gray"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_orderItemName" />
+
+        <TextView
+            android:id="@+id/tv_salesUnitValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="3dp"
+            android:text="Box"
+            android:textColor="@color/color_black"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_salesUnitTitle"
+            app:layout_constraintEnd_toStartOf="@+id/line_50"
+            app:layout_constraintStart_toEndOf="@+id/line_25"
+            app:layout_constraintTop_toTopOf="@+id/tv_salesUnitTitle" />
+
+        <TextView
+            android:id="@+id/tv_salesQtyTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_sales_qty"
+            android:textColor="@color/color_text_gray"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@id/line_50"
+            app:layout_constraintTop_toTopOf="@id/tv_salesUnitTitle"
+            app:layout_constraintBottom_toBottomOf="@id/tv_salesUnitTitle"/>
+
+        <TextView
+            android:id="@+id/tv_SalesQtyValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="3dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="15.00"
+            android:textColor="@color/color_black"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_salesQtyTitle"
+            app:layout_constraintStart_toStartOf="@+id/line_70"
+            app:layout_constraintTop_toTopOf="@+id/tv_salesQtyTitle" />
+
+        <TextView
+            android:id="@+id/tv_stockUnitTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/str_stocks_unit"
+            android:textColor="@color/color_text_gray"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_salesUnitTitle" />
+
+        <TextView
+            android:id="@+id/tv_stockUnitValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="3dp"
+            android:text="Carton"
+            android:textColor="@color/color_black"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_stockUnitTitle"
+            app:layout_constraintEnd_toStartOf="@+id/line_50"
+            app:layout_constraintStart_toStartOf="@+id/line_25"
+            app:layout_constraintTop_toTopOf="@+id/tv_stockUnitTitle" />
+
+        <TextView
+            android:id="@+id/tv_availQty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/str_avail_qty"
+            android:textColor="@color/color_text_gray"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_stockUnitTitle" />
+
+        <TextView
+            android:id="@+id/tv_availQtyValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:text="15.00"
+            android:textColor="@color/color_black"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_availQty"
+            app:layout_constraintEnd_toEndOf="@id/line_50"
+            app:layout_constraintStart_toStartOf="@+id/line_25"
+            app:layout_constraintTop_toTopOf="@+id/tv_availQty" />
+
+        <TextView
+            android:id="@+id/tv_qtyWUTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_qty_wu"
+            android:textColor="@color/color_text_gray"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_stockUnitTitle"
+            app:layout_constraintStart_toStartOf="@id/line_50"
+            app:layout_constraintTop_toTopOf="@+id/tv_stockUnitTitle" />
+
+        <TextView
+            android:id="@+id/tv_qtyWUValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="3dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="15.00"
+            android:textColor="@color/color_black"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_qtyWUTitle"
+            app:layout_constraintStart_toStartOf="@+id/line_70"
+            app:layout_constraintTop_toTopOf="@+id/tv_qtyWUTitle" />
+
+
+        <TextView
+            android:id="@+id/tv_warehouseTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/str_warehouse"
+            android:textColor="@color/color_text_gray"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@id/line_50"
+            app:layout_constraintTop_toBottomOf="@+id/tv_qtyWUTitle" />
+
+        <TextView
+            android:id="@+id/tv_goodTypeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/str_good_type"
+            android:textColor="@color/color_text_gray"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_availQty"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_warehouseValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="3dp"
+            android:maxLines="1"
+            android:text="Kho Hà Nội - Hàng bán"
+            android:textColor="@color/color_black"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/line_70"
+            app:layout_constraintTop_toTopOf="@id/tv_warehouseTitle"
+            app:layout_constraintBottom_toBottomOf="@id/tv_warehouseTitle"/>
+
+        <TextView
+            android:id="@+id/tv_goodTypeValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:maxLines="1"
+            android:text="Hàng bán"
+            android:textColor="@color/color_black"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/line_25"
+            app:layout_constraintTop_toTopOf="@id/tv_goodTypeTitle"
+            app:layout_constraintBottom_toBottomOf="@id/tv_goodTypeTitle"/>
+
+        <ImageView
+            android:id="@+id/img_iconOrderItemType"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_margin="4dp"
+            android:src="@drawable/icon_shopping"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <FrameLayout
+        android:layout_width="1000dp"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_red">
+
+            <TextView
+                android:id="@+id/btn_delete"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="@string/str_delete"
+                android:textSize="16sp"
+                android:textColor="@android:color/white"
+                android:gravity="center" />
+        </FrameLayout>
+    </FrameLayout>
+</LinearLayout>

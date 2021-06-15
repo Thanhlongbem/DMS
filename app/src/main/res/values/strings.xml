@@ -1,0 +1,528 @@
+<resources>
+    <string name="app_name">Do DMS</string>
+
+    <string name="sort_ascending">Sort Ascending</string>
+    <string name="sort_descending">Sort Descending</string>
+    <string name="hiding_row_sample">Hiding 3. Row Sample</string>
+    <string name="showing_row_sample">Showing 3. Row Sample</string>
+    <string name="scroll_to_column_position">Scroll to 15. column position</string>
+    <string name="scroll_to_row_position">Scroll to 5. row position</string>
+    <string name="show_hide_the_column">Showing / Hiding 1. column</string>
+
+    <string-array name="moods">
+        <item />
+        <item>Happy</item>
+        <item>Sad</item>
+    </string-array>
+
+    <string-array name="gender">
+        <item />
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="items_per_page">
+        <item>10</item>
+        <item>20</item>
+        <item>25</item>
+        <item>50</item>
+        <item>All</item>
+    </string-array>
+    <string name="title_activity_login">Sign in</string>
+
+    <string name="str_hello_user">Hello, %1$s</string>
+    <string name="enter">Enter</string>
+    <string name="str_email">Email Address</string>
+    <string name="str_enter_email">Enter Email Address</string>
+    <string name="str_password">Password</string>
+    <string name="str_enter_password">Enter Password</string>
+    <string name="str_login">Login</string>
+    <string name="str_language">Language</string>
+    <string name="str_server">Server: %1$s</string>
+
+    <string name="str_home">Home</string>
+    <string name="str_back">Back</string>
+    <string name="str_visit_customer">Visit Customer</string>
+    <string name="str_sales_order">Sales Order</string>
+    <string name="str_location">Location</string>
+    <string name="str_time_keeping">Timekeeping</string>
+    <string name="str_item_master">Item Master</string>
+    <string name="str_sale_price_promotion">Sales Price &amp; Promotion</string>
+    <string name="str_customer">Customer</string>
+    <string name="str_customer_detail">Customer Detail</string>
+    <string name="str_tracking_report">Tracking Reports</string>
+    <string name="str_report">Report</string>
+    <string name="str_personal_report">Personal Report</string>
+    <string name="str_phone">Phone Number</string>
+    <string name="str_phone_2">Phone Number 2</string>
+    <string name="str_phone_manda"><font color='#FF0000'>*</font>Phone</string>
+
+
+    <string name="str_setting">Settings</string>
+    <string name="str_add">Add</string>
+
+    <string name="str_check_in">Check in</string>
+    <string name="str_sales">Sales</string>
+    <string name="str_visited">Visited</string>
+    <string name="str_not_visited">Not Visited</string>
+    <string name="str_select_server_login">Select Server Login</string>
+    <string name="str_select_language">Select Language</string>
+    <string name="str_vietnamese">Tiếng Việt</string>
+    <string name="str_english">English</string>
+    <string name="str_language_value">English</string>
+
+    <string name="str_opening">Opening</string>
+    <string name="str_confirm">Confirmed</string>
+    <string name="str_issued">Issued</string>
+    <string name="str_stop">Stopped</string>
+    <string name="str_activated">Activated</string>
+    <string name="str_stopped">Stopped</string>
+    <string name="str_deactivated">Deactivated</string>
+
+    <string name="str_sold_by">Sold by: %1$s</string>
+    <string name="str_last_visited">Last visited</string>
+    <string name="str_last_sold">Last sold</string>
+
+    <string name="str_not_available">Not Available</string>
+    <string name="str_not_found_data">Not Found Query Data</string>
+    <string name="text_filter_condition">Filter Condition</string>
+
+
+    <string name="str_delete">Delete</string>
+    <string name="str_take_picture">Take a picture</string>
+    <string name="str_take_note">Take a note</string>
+    <string name="str_more">More</string>
+
+    <string name="str_detail">Detail</string>
+    <string name="str_related">Related</string>
+
+    <string name="str_general_info">General Information</string>
+    <string name="str_addition_info">Addition Information</string>
+    <string name="str_address">Address</string>
+    <string name="str_customer_description">Customer Description</string>
+
+    <string name="str_customer_name">Customer name</string>
+    <string name="str_enter_customer_name">Enter Customer name</string>
+    <string name="str_customer_no">Customer no</string>
+    <string name="str_enter_customer_no">Enter Customer no</string>
+    <string name="str_customer_code">Customer code</string>
+    <string name="str_customer_type">Customer Type</string>
+    <string name="str_usage_status">Usage Status</string>
+    <string name="str_enter_customer_type">Enter Customer Type</string>
+    <string name="str_customer_class">Customer Classification</string>
+    <string name="str_fax">Fax No</string>
+    <string name="str_website">Website</string>
+    <string name="str_representation">Representation Person</string>
+    <string name="str_license">Business License No</string>
+    <string name="str_tax">Tax code</string>
+    <string name="str_tax_rate">Tax Rate</string>
+    <string name="str_owner">Customer Owner</string>
+    <string name="str_customer_group">Customer group %1$s</string>
+    <string name="str_customer_group_1">Customer group 1</string>
+    <string name="str_customer_group_2">Customer group 2</string>
+    <string name="str_customer_group_3">Customer group 3</string>
+    <string name="str_customer_group_4">Customer group 4</string>
+    <string name="str_group">Customer Group</string>
+    <string name="str_item_group">Item group %1$s</string>
+    <string name="str_item_grade">Item grade</string>
+    <string name="str_street">Street</string>
+    <string name="str_district">District</string>
+    <string name="str_province">City</string>
+    <string name="str_country">Country</string>
+    <string name="str_remark">Remark</string>
+    <string name="str_remark_for_item">Remark For Item</string>
+
+    <string name="str_route">Routes</string>
+    <string name="str_images">Images</string>
+    <string name="str_notes">Notes</string>
+
+    <string name="str_item_category">Item Category</string>
+    <string name="str_item_brand_info">Item Brand</string>
+    <string name="str_item_brand">Item Brand</string>
+    <string name="str_item_model">Item Model</string>
+    <string name="str_vendor">Vendor Name</string>
+    <string name="str_stock_unit">Stock Unit</string>
+    <string name="str_sale_unit">Sales Std. Unit</string>
+    <string name="str_convolution_quality">Conv. Qty</string>
+    <string name="str_sale_price">Sale Price</string>
+    <string name="str_vat">VAT</string>
+    <string name="str_origin">Origin</string>
+    <string name="str_item_spec">Item Spec</string>
+
+    <string name="str_route_of">Routes of %1$s</string>
+    <string name="str_note_of">Notes of %1$s</string>
+    <string name="str_image_of">Images of %1$s</string>
+    <string name="str_visit_day">Visit day(s): %1$s</string>
+
+    <string name="str_done">Done</string>
+    <string name="str_edit">Edit</string>
+    <string name="str_save">Save</string>
+
+    <string name="str_note_detail">Note detail</string>
+    <string name="str_note_modify">Note Modify</string>
+    <string name="str_create_note">Create a note</string>
+    <string name="str_last_modifier">Last modifier</string>
+
+    <string name="str_note_content">Note content</string>
+    <string name="str_note_title">Note title</string>
+    <string name="str_related_object">Related Object</string>
+
+    <string name="str_question_delete">Do you want to delete ?</string>
+    <string name="str_yes">Yes</string>
+    <string name="str_no">No</string>
+
+    <string name="str_apply">Apply</string>
+    <string name="str_ok">OK</string>
+    <string name="str_cancel">Cancel</string>
+
+    <string name="str_empty">There is no available item</string>
+    <string name="str_stock_count">Stock Count</string>
+    <string name="str_presentation">Presentation</string>
+    <string name="str_add_items">Add Items</string>
+    <string name="str_count_item">Count Item</string>
+    <string name="str_check_out">Check Out</string>
+    <string name="str_get_location">Get Location</string>
+    <string name="str_no_stock_count_data">Not exists stock count data</string>
+    <string name="str_no_sale_order">Not exists Sales Order</string>
+    <string name="str_no_image">Not exists Image</string>
+
+    <string name="str_new_customer">New Customer</string>
+    <string name="str_description_hint">Description about this customer</string>
+    <string name="str_item_count">Item No</string>
+    <string name="str_select_item">Select Item</string>
+    <string name="str_count_unit">Count Unit</string>
+    <string name="str_count_unit_normal">Count Unit</string>
+    <string name="str_select_count_unit">Select Count Unit</string>
+    <string name="str_count_quantity">Count Quantity</string>
+    <string name="str_enter_quantity_of_item">Enter Quantity of Item</string>
+    <string name="str_count_quantity_wu">Count Quantity (Warehouse Unit)</string>
+    <string name="str_lot_serial_no">Lot/Serial No.</string>
+    <string name="str_lot_serial">Lot/Serial</string>
+    <string name="str_lot_serial_control">Lot/Serial Control</string>
+    <string name="str_enter_lot_serial_no">Enter Lot/Serial No. of Item</string>
+    <string name="str_make_date">Make Date</string>
+    <string name="str_enter_make_date">Enter Make Date of Item</string>
+    <string name="str_expiry_date">Expiry Date</string>
+    <string name="str_expiry_duration">Expiry Duration</string>
+    <string name="str_enter_expiry_date">Enter Expiry Date of Item</string>
+    <string name="str_remark_of_item">Remark of Item</string>
+    <string name="str_item_stock_count">Item Stock Count</string>
+    <string name="str_update_stock_count">Update Stock Count</string>
+    <string name="str_confirm_order">Confirm Order</string>
+    <string name="str_unapply_promo">UnApply Promo</string>
+    <string name="str_issue_handling">Issue Handling</string>
+    <string name="str_get_gift">Get Gift</string>
+    <string name="str_last_price">Tổng tiền</string>
+    <string name="str_salesman">Salesman</string>
+    <string name="str_contact">Contact</string>
+    <string name="str_common_info">Common Info.</string>
+    <string name="str_items">Items</string>
+    <string name="str_order_items">Order Items</string>
+    <string name="str_order_date">Order Date</string>
+    <string name="str_gifts">Gifts</string>
+    <string name="str_sales_department">Sales Department</string>
+    <string name="str_sales_channel">Sales Channel</string>
+    <string name="str_prepaid_amount">Prepaid Amount</string>
+    <string name="str_prepaid_rate">Prepaid Rate</string>
+    <string name="str_payment_term">Payment Term</string>
+    <string name="str_payment_information">Payment Information</string>
+    <string name="str_addition_information">Addition Information</string>
+    <string name="str_po_cn">Purchase Order/Contract No.</string>
+    <string name="str_sl_ct">Sales Price List/Contract</string>
+    <string name="str_contact_name">Contact Name</string>
+    <string name="str_contact_phone">Contact Phone</string>
+    <string name="str_contact_phone_no">Contact Phone No.</string>
+    <string name="str_project">Project</string>
+    <string name="str_project_name">Project Name</string>
+    <string name="str_currency">Currency</string>
+    <string name="str_ex_rate">Ex. Rate</string>
+    <string name="str_confirmer">Confirmer</string>
+    <string name="str_confirm_date">Confirm Date</string>
+    <string name="str_creator">Creator</string>
+    <string name="str_create_date">Create Date</string>
+    <string name="str_delivery_information">Delivery Information</string>
+    <string name="str_receiver">Receiver</string>
+    <string name="str_receiver_phone_num">Receiver\'s Phone Number</string>
+    <string name="str_delivery_address">Delivery Address</string>
+    <string name="str_delivery_time">Delivery Time</string>
+    <string name="str_ship_method">Ship Method</string>
+    <string name="str_new_order">New Order</string>
+    <string name="str_new_sales_order">New Sales Order</string>
+    <string name="str_delete_order">Delete Order</string>
+    <string name="str_new_gift">New Gift</string>
+    <string name="str_delete_gift">Delete Gift</string>
+    <string name="str_add_item_sales">Add Item Sales</string>
+    <string name="str_add_accessory">Add Accessory Item</string>
+    <string name="str_edit_accessory">Edit Accessory Item</string>
+    <string name="str_sales_unit">Sales Unit</string>
+    <string name="str_select_sales_unit">Select Sales Unit</string>
+    <string name="str_stocks_unit">Stock Unit</string>
+    <string name="str_discount">Discount</string>
+    <string name="str_discount_by_rate">Discount By Rate</string>
+    <string name="str_discount_by_amount">Discount By Amount</string>
+    <string name="str_discount_rate">Discount Rate (%)</string>
+    <string name="str_enter_discount_rate">Enter Discount Rate</string>
+    <string name="str_discount_amount">Discount Amount</string>
+    <string name="str_total_amount">Total Amount</string>
+    <string name="str_enter_discount_amount">Enter Discount Amount</string>
+    <string name="str_warehouse">Warehouse</string>
+    <string name="str_select_warehouse">Select Warehouse</string>
+    <string name="str_good_type">Good Type</string>
+    <string name="str_sales_qty">Sales Qty</string>
+    <string name="str_sales_quantity">Sales Quantity</string>
+    <string name="str_select_sales_quantity">Select Sales Quantity</string>
+    <string name="str_qty_wu">Qty (Wh Unit)</string>
+    <string name="str_quantity_wu">Quantity (Warehouse Unit)</string>
+    <string name="str_sales_price">Sales Price</string>
+    <string name="str_sales_std_price">Sales Std. Price</string>
+    <string name="str_buy_std_price">Buy Std. Price</string>
+    <string name="str_avail_qty">Avail Qty.</string>
+    <string name="str_vat_rate">VAT Rate</string>
+    <string name="str_vat_sales_price">VAT Include Sales Price</string>
+    <string name="str_vat_purchasing_price">VAT Include Purchasing Price</string>
+    <string name="str_unit">Unit</string>
+    <string name="str_unit_price">Unit Price</string>
+    <string name="str_select_unit_price">Select Unit Price</string>
+    <string name="str_quantity">Quantity</string>
+    <string name="str_parent_item">Parent Item</string>
+    <string name="str_item_parent">Item Parent</string>
+    <string name="str_select_item_parent">Select Item Parent</string>
+    <string name="str_promotion">Promotion</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="str_all_video">All Videos</string>
+    <string name="str_bookmarks">Book Marks</string>
+    <string name="str_recently_played">Recently Played</string>
+    <string name="str_item_sales">Item sales</string>
+    <string name="str_available_stock">Available Stock Quantity</string>
+    <string name="str_add_order_item">Add Order Item</string>
+    <string name="str_wu_issue_type">Warehouse Type</string>
+    <string name="str_company_wu">Company Warehouse</string>
+    <string name="str_distributor_wu">Distributor Warehouse</string>
+    <string name="str_business_unit">Business Unit</string>
+    <string name="str_stock_quantity">Stock Quantity</string>
+    <string name="str_stock_qty">Stock Qty</string>
+    <string name="str_stock_qty_dot">Stock Qty.</string>
+    <string name="str_stk_qty">Stk Qty.</string>
+    <string name="str_stock_qty_by_ls">Stock Qty by Lot/Serial</string>
+
+
+    <string name="str_accessory_version">Accessory Version</string>
+    <string name="str_select_version">Select Version</string>
+    <string name="str_item_accessory">Item Accessory</string>
+    <string name="str_select_item_accessory">Select Item Accessory</string>
+    <string name="str_accessory_unit">Accessory Unit</string>
+    <string name="str_select_accessory_unit">Select Accessory Unit</string>
+
+    <string name="gift_name">Gift Name</string>
+    <string name="gift_unit">Gift Unit</string>
+
+
+    <!-- Preference Service -->
+    <string name="setting_header_tracking">Tracking Location</string>
+    <string name="setting_enable_service">Enable Service</string>
+
+    <!-- Preference Logout -->
+    <string name="setting_header_user">User Information</string>
+    <string name="setting_logout">Logout</string>
+
+    <!--    Setting -->
+    <string name="setting_map_type">Messages</string>
+
+
+    <string name="str_visit_info">Visit Info</string>
+    <string name="str_visit_remark">Visit Remark</string>
+    <string name="str_confirmed">Confirmed</string>
+    <string name="str_relocate">Relocate</string>
+    <string name="str_upload_image">Upload Image</string>
+    <string name="str_file_name">File Name</string>
+    <string name="str_file_note">File Note</string>
+    <string name="str_enter_delivery_address">Enter Delivery Address</string>
+    <string name="str_phone_number1">Phone Number</string>
+    <string name="str_phone_number2">Phone Number 2</string>
+    <string name="str_item_name">Item Name (English)</string>
+    <string name="str_item_type">Item Type</string>
+    <string name="str_item_status">Item Status</string>
+    <string name="str_pic">Person in Charge</string>
+    <string name="str_sales_purchasing">Sales &amp; Purchasing Properties</string>
+    <string name="str_default_purchase_unit">Default Purchase Unit</string>
+    <string name="str_default_sales_unit">Default Sales Unit</string>
+    <string name="str_default_vendor">Default Vendor</string>
+    <string name="str_default_currency">Default Currency</string>
+    <string name="str_default_maker">Default Maker</string>
+    <string name="str_lead_time">Lead Time (Day)</string>
+    <string name="str_hs_no">HS No.</string>
+    <string name="str_other_info">Other Information</string>
+    <string name="str_vendor_warranty_period">Vendor Warranty Period</string>
+    <string name="str_customer_warranty_period">Customer Warranty Period</string>
+    <string name="str_keeping_condition">Keeping Condition</string>
+    <string name="str_use">Use</string>
+    <string name="str_not_use">Not Use</string>
+    <string name="str_mfg_date">Mfg.Date</string>
+    <string name="str_exp_date">Exp.Date</string>
+    <string name="str_gender">Gender</string>
+    <string name="str_male">Male</string>
+    <string name="str_female">Female</string>
+    <string name="str_birthday_establish">Birthday - Establish day</string>
+    <string name="str_customer_phone_no">Customer Phone No.</string>
+    <string name="str_create_sale_item">Create sales Item</string>
+    <string name="str_edit_sale_item">Edit Sales Item</string>
+    <string name="str_sale_item">Sales Item</string>
+    <string name="str_total_time">Total Time</string>
+    <string name="str_finish">Finish</string>
+    <string name="str_start">Start</string>
+    <string name="str_check_in_note">Check-in Note</string>
+    <string name="str_check_out_note">Check-out Note</string>
+    <string name="str_owner_name">Owner: %1$s</string>
+    <string name="str_error_message">Something went wrong!</string>
+    <string name="str_error_detect_location">Cannot detect your location! Please enable GPS of your device before continue this action</string>
+
+    <string name="str_information">Information</string>
+    <string name="str_success">Success</string>
+    <string name="str_error">Error</string>
+    <string name="str_close">Close</string>
+
+    <string name="str_staff_activities">Staff Activities</string>
+    <string name="str_tracking_staff_location">Tracking Staff Location</string>
+    <string name="str_tracking_visit_customer">Tracking Visit Customer</string>
+    <string name="str_tracking_picture">Tracking Take Pictures of Customer</string>
+    <string name="str_sales_report">Sales Reports</string>
+    <string name="str_tracking_report_title">Tracking &amp; Sales Reports</string>
+    <string name="str_plan">Plan</string>
+    <string name="str_actual">Actual</string>
+    <string name="str_location_on_map">Location on Map</string>
+    <string name="str_direct_to_location">Direct to location</string>
+    <string name="str_new_customer_not_order">New Customer &amp; Customer Not Order</string>
+    <string name="str_staff_sales_result">Sales Result by Staff</string>
+    <string name="str_point_of_sales">New Point Of Sales Summary</string>
+    <string name="str_daily_performance">Sales &amp; Visit Daily Performance</string>
+    <string name="str_summation_report">Summation Report Of Customer</string>
+    <string name="str_sales_effective">Sales Effective On Route</string>
+
+    <string name="str_user_infomation">User Information</string>
+    <string name="str_change_pass">Change Password</string>
+    <string name="str_sync_data_to_server">Sync data to server</string>
+    <string name="str_data_not_synced">Data not synced</string>
+    <string name="str_presenation_management">Presenter Management</string>
+    <string name="str_id_no">ID No</string>
+    <string name="str_birthday">Birthday</string>
+    <string name="str_marriage_status">Marriage status</string>
+    <string name="str_blood_type">Blood Type</string>
+    <string name="str_old_password">Old Password</string>
+    <string name="str_new_password">New Password</string>
+    <string name="str_confirm_password">Confirm Password</string>
+    <string name="str_edit_profile">Edit Profile</string>
+    <string name="str_update_password">Update Password</string>
+
+    <string name="str_vs_of_route_not_visit">Customer of Route Not Visited</string>
+    <string name="str_vs_in_route">Visit Customer In Route</string>
+    <string name="str_vs_not_in_route">Visit Customer Not In Route</string>
+    <string name="str_vs_have_image">Visit Customer - Have Image</string>
+    <string name="str_vs_no_image">Visit Customer - No Image</string>
+    <string name="str_vs_have_order">Visit Customer - Have Order</string>
+    <string name="str_vs_not_order">Visit Customer - Not Order</string>
+    <string name="str_vs_right_location">Visit Customer - Right Location</string>
+    <string name="str_vs_wrong_location">Visit Customer - Wrong Location</string>
+
+    <string name="str_right_location">Right Location</string>
+    <string name="str_wrong_location">Wrong Location</string>
+    <string name="str_right_route">Right Route</string>
+    <string name="str_wrong_route">Wrong Route</string>
+
+    <string name="str_total_cst_visited">Total Customer Visited</string>
+    <string name="str_total_visit_has_pic">Total Visit Has Picture</string>
+    <string name="str_total_visit_no_pic">Total Visit No Picture</string>
+    <string name="str_total_pic">Total Pictures</string>
+
+    <string name="str_total_sales_amount">Total Amount</string>
+    <string name="str_total_sales_quantity">Total Quantity</string>
+    <string name="str_total_sales_order">Total Sales Order</string>
+    <string name="str_customer_not_order">Customer Not Order</string>
+    <string name="str_result_summation">Result Summation</string>
+    <string name="str_result_detail">Result Detail</string>
+
+    <string name="str_sales_and_visit">Sales &amp; Visit</string>
+    <string name="str_dept_staff">Department/Staff</string>
+    <string name="str_visit">Visit</string>
+    <string name="str_order">Order</string>
+    <string name="str_morning">Morning</string>
+    <string name="str_afternoon">Afternoon</string>
+    <string name="str_km">Km</string>
+
+    <string name="str_your_activity">Your Activity</string>
+    <string name="str_visit_summation">Visit Result Summation</string>
+    <string name="str_visit_customer_detail">Visit Customer Detail</string>
+    <string name="str_timekeeping_diary">Timekeeping Diary</string>
+    <string name="str_your_sales_result">Your Sales Result</string>
+    <string name="str_kpi_target">KPI Target</string>
+    <string name="str_KPI_important_item">KPI Of Important Items</string>
+    <string name="str_monthly_summary">Data Monthly Summary</string>
+    
+    <string name="str_invalid_check_in">Invalid Checkin Position</string>
+    <string name="str_you_are_here">You are here</string>
+    <string name="str_customer_position">Customer Position</string>
+    <string name="str_cannot_calculate_distance">Cannot calculate the distance between user and customer</string>
+    <string name="str_invalid_checkin_message">Distance between your position and customer is %1$s m, Please try relocate your location or continue check-in with this distance or cancel visit</string>
+
+    <string name="str_begin_month">Begin Month</string>
+    <string name="str_new_open">New Open</string>
+    <string name="str_end_month">End Month</string>
+    <string name="str_day">Day</string>
+    <string name="str_tk_check_in">Check in</string>
+    <string name="str_tk_check_out">Check out</string>
+    <string name="str_late">Late</string>
+    <string name="str_early">Early</string>
+    <string name="str_hours">Hours</string>
+    <string name="str_total_work_time">Total work time</string>
+    <string name="str_numb_of_late">Number of late times</string>
+    <string name="str_numb_of_early">Number of leave early</string>
+    <string name="str_times">Times</string>
+    <string name="str_total">Total</string>
+    <string name="str_no_">No.</string>
+    <string name="str_by_customer">By Customer</string>
+    <string name="str_by_item">By Item</string>
+    <string name="str_sales_point_customer">New Point Of Sales/Customer</string>
+    <string name="str_sales_result">Sales Result</string>
+    <string name="str_numb_sales_order">Number of Sales Order</string>
+    <string name="str_numb_on_route">Number Customer On Route</string>
+    <string name="str_customer_visited">Customer Visited</string>
+    <string name="str_customer_not_visited">Customer Not Visited</string>
+    <string name="str_numb_visited_time">Number Visit Times</string>
+    <string name="str_visit_right_route">Visit Right Route</string>
+    <string name="str_visit_wrong_route">Visit Wrong Route</string>
+    <string name="str_visit_right_location">Visit Right Location</string>
+    <string name="str_visit_wrong_location">Visit Wrong Location</string>
+    <string name="str_morning_visit">Morning Visit</string>
+    <string name="str_afternoon_visit">Afternoon Visit</string>
+    <string name="str_visit_with_order">Visit With Order</string>
+    <string name="str_total_move_distance">Total Move Distance</string>
+    <string name="str_your_performance">Your Performance</string>
+    <string name="str_item">Item</string>
+    <string name="str_qty">Qty.</string>
+    <string name="str_orders">Orders</string>
+    <string name="str_debt">Debt</string>
+    <string name="str_stock">Stock</string>
+    <string name="str_reward">Reward</string>
+    <string name="str_kpi">KPI</string>
+    <string name="str_visit_times">Visit Times</string>
+    <string name="str_in_period">In Period</string>
+    <string name="str_uncollected">Uncollected</string>
+    <string name="str_total_quantity">Total Quantity</string>
+    <string name="str_begin">Begin</string>
+    <string name="str_end">End</string>
+    <string name="str_paid_rate">Paid/Not Paid</string>
+    <string name="str_total_customer">Total Customer</string>
+    <string name="str_customer_order">Customer Order</string>
+    <string name="str_number_order">Number Order</string>
+    <string name="str_order_qty">Order Qty.</string>
+    
+    <string name="str_search_sp_promotion">Search Price and Promotion of Item</string>
+    <string name="str_sales_price_list">Sales Price List</string>
+    <string name="str_sales_price_list_detail">Sales Price List Detail</string>
+    <string name="str_unit_applied">Unit Applied</string>
+    <string name="str_promotion_list">Promotion List</string>
+    <string name="str_promotion_list_detail">Promotion List Detail</string>
+    <string name="str_action">Action</string>
+    <string name="str_condition">Condition</string>
+    <string name="str_no_gift">There is no available gift</string>
+
+</resources>

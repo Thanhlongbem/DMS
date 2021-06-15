@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="5dp"
+    android:layout_marginBottom="5dp"
+    app:cardElevation="0.5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_item_visit"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toStartOf="@+id/checkin_information_content"
+            android:lineSpacingMultiplier="1.29"
+            android:paddingVertical="4dp"
+            tools:text="Công ty TNHH HumaxVina"
+            android:textColor="@color/color_text_visited_customer"
+            android:textSize="@dimen/text_title_size"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/layout_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_title"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="2dp">
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:background="@drawable/round_corner_rectangle"
+                android:backgroundTint="#16A656"
+                android:src="@drawable/ic_location" />
+
+            <TextView
+                android:id="@+id/tv_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="7dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/color_text_gray"
+                android:textSize="@dimen/text_sub_info_size"
+                android:maxLines="2"
+                android:ellipsize="end"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_contact"
+            android:layout_below="@id/layout_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10">
+            <LinearLayout
+                android:id="@+id/layout_phone"
+                android:layout_width="0dp"
+                android:layout_weight="4.5"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout_location"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="2dp">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:background="@drawable/round_corner_rectangle"
+                    android:backgroundTint="#FF0B65AD"
+                    android:src="@drawable/ic_phone" />
+
+                <TextView
+                    android:id="@+id/tv_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="7dp"
+                    android:gravity="center_vertical"
+                    tools:text="+840987654321"
+                    android:textColor="@color/color_text_gray"
+                    android:textSize="@dimen/text_sub_info_size"
+                    android:maxLines="1"
+                    android:ellipsize="end"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_customer"
+                android:layout_width="0dp"
+                android:layout_weight="5.5"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout_location"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="2dp">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:background="@drawable/bg_circle"
+                    android:backgroundTint="#F80A0A"
+                    android:src="@drawable/ic_person" />
+
+                <TextView
+                    android:id="@+id/tv_owner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="7dp"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:textColor="@color/color_text_gray"
+                    android:textSize="@dimen/text_sub_info_size" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_sold"
+            android:layout_below="@id/layout_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="10dp"
+            android:layout_marginTop="3dp"
+            android:weightSum="10">
+
+            <ImageView
+                android:id="@+id/img_sold"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/round_corner_rectangle"
+                android:backgroundTint="#EAA1F7"
+                android:src="@drawable/ic_contract" />
+
+            <TextView
+                android:id="@+id/tv_sold_by"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="7dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/img_sold"
+                android:gravity="center_vertical"
+                android:text="@string/str_last_sold"
+                android:textColor="@color/color_text_gray"
+                android:textSize="@dimen/text_sub_info_size" />
+            <TextView
+                android:id="@+id/tv_sold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="7dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/color_text_gray"
+                android:textSize="@dimen/text_sub_info_size"
+                android:textStyle="bold"
+                android:layout_toRightOf="@+id/tv_sold_by"/>
+
+            <TextView
+                android:id="@+id/tv_sold_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.5"
+                android:layout_marginLeft="15dp"
+                android:gravity="center_vertical|start"
+                tools:text="21/05/2020 08:45"
+                android:textColor="@color/color_grey"
+                android:textSize="@dimen/text_sub_info_size"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/layout_sold"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:id="@+id/tag_sales"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/ic_sale" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="5dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/str_sales"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_sub_info_size"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tag_report"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/ic_report_chart" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="5dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/str_report"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_sub_info_size"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

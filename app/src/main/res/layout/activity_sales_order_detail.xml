@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/layout_appbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="?colorPrimary"
+        android:fitsSystemWindows="true"
+        android:minHeight="?actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:navigationIcon="@drawable/ic_action_back">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+    </androidx.appcompat.widget.Toolbar>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_topInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/layout_appbar"
+        android:orientation="vertical"
+        android:background="@color/color_white">
+
+        <TextView
+            android:id="@+id/tv_nameSaleOrderDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/color_black"
+            android:text="Công ty TNHH B.C.E Việt Nam"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/line_ver_parent_0.65"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.65" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/line_ver_parent_0.25"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.25" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/line_ver_parent_0.3"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.3" />
+
+            <ImageView
+                android:id="@+id/img_phoneNumber"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/icon_phone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="3dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_phoneNoOfSaleOrderDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="0123456789"
+                android:textColor="@color/color_black"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toBottomOf="@+id/img_phoneNumber"
+                app:layout_constraintStart_toEndOf="@+id/img_phoneNumber"
+                app:layout_constraintTop_toTopOf="@+id/img_phoneNumber"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@+id/line_ver_parent_0.65"
+                android:background="@drawable/bg_vc_issue_state"
+                android:text="@string/str_issue_handling"
+                app:layout_constraintTop_toTopOf="@+id/img_phoneNumber"
+                app:layout_constraintBottom_toBottomOf="@+id/img_phoneNumber"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:layout_marginStart="5dp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                />
+
+            <ImageView
+                android:id="@+id/img_salesman"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/icon_note_yellow"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/img_lastPrice"
+                android:padding="2dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_salesmanName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:textColor="@color/color_text_gray"
+                android:text="Nguyễn Văn Minh Chiến"
+                app:layout_constraintStart_toEndOf="@+id/img_salesman"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="5dp"
+                app:layout_constraintTop_toTopOf="@+id/img_salesman"
+                app:layout_constraintBottom_toBottomOf="@+id/img_salesman"
+                android:layout_marginEnd="5dp"
+                />
+
+            <ImageView
+                android:id="@+id/img_schedule"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                app:layout_constraintStart_toEndOf="@+id/line_ver_parent_0.65"
+                app:layout_constraintTop_toTopOf="@+id/img_lastPrice"
+                app:layout_constraintBottom_toBottomOf="@+id/img_lastPrice"
+                android:src="@drawable/icon_schedule"
+                android:tint="#078C36"
+                android:padding="5dp"/>
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:textColor="@color/color_black"
+                app:layout_constraintTop_toTopOf="@+id/img_schedule"
+                app:layout_constraintBottom_toBottomOf="@+id/img_schedule"
+                app:layout_constraintStart_toEndOf="@+id/img_schedule"
+                android:text="27/05/2020"/>
+
+            <ImageView
+                android:id="@+id/img_lastPrice"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/icon_dollar"
+                android:tint="#FFBF00"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/img_phoneNumber"
+                android:padding="4dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_lastPriceValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:textColor="@color/color_text_gray"
+                android:text="15,000,000 VND"
+                app:layout_constraintStart_toEndOf="@+id/img_lastPrice"
+                app:layout_constraintEnd_toStartOf="@+id/line_ver_parent_0.65"
+                android:layout_marginStart="6dp"
+                app:layout_constraintTop_toTopOf="@+id/img_lastPrice"
+                app:layout_constraintBottom_toBottomOf="@+id/img_lastPrice"
+                android:layout_marginEnd="5dp"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:weightSum="10"
+            android:layout_weight="5"
+            android:orientation="horizontal"
+            >
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:background="@drawable/bg_btn_state_orange"
+                android:id="@+id/view_promotion"
+                android:paddingHorizontal="10dp">
+                <ImageView
+                    android:id="@+id/img_promotion"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/icon_unapply_promo"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_promotion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_white"
+                    android:textSize="14sp"
+                    android:layout_marginStart="10dp"
+                    app:layout_constraintStart_toEndOf="@+id/img_promotion"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:text="Apply Promotion"
+                    android:textStyle="bold"
+                    android:maxLines="1"
+                    />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="2"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:background="@drawable/bg_btn_state_green"
+                android:id="@+id/view_confirm"
+                android:layout_alignParentRight="true"
+                android:paddingHorizontal="10dp"
+                android:clickable="true"
+                android:focusable="true">
+                <ImageView
+                    android:id="@+id/img_confirm"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/icon_confirm"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_confirm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/color_white"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toEndOf="@+id/img_confirm"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:text="Confirm Order"
+                    android:textStyle="bold"
+                    android:maxLines="1"
+                    />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_base"
+            android:layout_marginTop="10dp">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/color_white"
+                android:elevation="8dp" />
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tab"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@color/color_white"
+                app:tabIndicatorHeight="3dp"
+                app:tabSelectedTextColor="@color/colorPrimaryDark"
+                app:tabTextAppearance="@style/TabTextAppearance" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintTop_toBottomOf="@+id/layout_topInfo"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <ProgressBar
+        android:id="@+id/loading_progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="2dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

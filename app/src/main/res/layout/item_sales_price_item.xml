@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp"
+    android:layout_marginBottom="4dp"
+    android:background="@drawable/round_bg_white">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/line_20"
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.2"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/line_50"
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/line_70"
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.7"/>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_black"
+        android:textSize="@dimen/text_standard_size"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_unit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_sales_unit"
+        android:textSize="@dimen/text_sub_info_size"
+        android:textColor="@color/color_text_gray"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="@id/tv_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"/>
+
+    <TextView
+        android:id="@+id/tv_qty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_sales_qty"
+        android:textSize="@dimen/text_sub_info_size"
+        android:textColor="@color/color_text_gray"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="@id/tv_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_unit"/>
+
+    <TextView
+        android:id="@+id/tv_sales_unit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_sub_info_size"
+        android:textColor="@color/color_black"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="@id/line_20"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"/>
+
+    <TextView
+        android:id="@+id/tv_sales_qty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_sub_info_size"
+        android:textColor="@color/color_black"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="@id/line_20"
+        app:layout_constraintTop_toBottomOf="@id/tv_unit"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_sales_price"
+        android:textSize="@dimen/text_sub_info_size"
+        android:textColor="@color/color_text_gray"
+        app:layout_constraintTop_toTopOf="@id/tv_unit"
+        app:layout_constraintBottom_toBottomOf="@id/tv_unit"
+        app:layout_constraintStart_toStartOf="@id/line_50"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_vat_rate"
+        android:textSize="@dimen/text_sub_info_size"
+        android:textColor="@color/color_text_gray"
+        app:layout_constraintTop_toTopOf="@id/tv_qty"
+        app:layout_constraintBottom_toBottomOf="@id/tv_qty"
+        app:layout_constraintStart_toStartOf="@id/line_50"/>
+
+    <TextView
+        android:id="@+id/tv_sales_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_sub_info_size"
+        android:textColor="@color/color_black"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@id/tv_unit"
+        app:layout_constraintBottom_toBottomOf="@id/tv_unit"
+        app:layout_constraintStart_toStartOf="@id/line_70"/>
+
+    <TextView
+        android:id="@+id/tv_vat_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_sub_info_size"
+        android:textColor="@color/color_black"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@id/tv_qty"
+        app:layout_constraintBottom_toBottomOf="@id/tv_qty"
+        app:layout_constraintStart_toStartOf="@id/line_70"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

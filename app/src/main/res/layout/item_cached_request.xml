@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginBottom="4dp"
+    >
+
+    <androidx.cardview.widget.CardView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="?attr/selectableItemBackground">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:id="@+id/img_request"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginRight="4dp"
+                android:src="@drawable/customer"
+                app:tint="@color/color_blue" />
+
+            <TextView
+                android:id="@+id/txt_request_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/img_request"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                tools:text="Customer" />
+
+            <ScrollView
+                android:id="@+id/child_scroll"
+                android:layout_below="@+id/txt_request_name"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+                <TextView
+                    android:id="@+id/txt_request_body"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="10sp"
+                    tools:text="body" />
+
+            </ScrollView>
+
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/child_scroll"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:id="@+id/view_sync"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="27dp"
+                        android:layout_height="27dp"
+                        android:src="@drawable/ic_sync"
+                        app:tint="@color/colorPrimary" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="5dp"
+                        android:gravity="center_vertical"
+                        android:text="Sync"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/text_standard_size"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/view_delete"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/ic_delete"
+                        app:tint="@color/colorPrimary" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="5dp"
+                        android:gravity="center_vertical"
+                        android:text="Delete"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/text_standard_size"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <FrameLayout
+        android:layout_width="1000dp"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_red">
+
+            <TextView
+                android:id="@+id/btn_delete"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="@string/str_delete"
+                android:textSize="16sp"
+                android:textColor="@android:color/white"
+                android:gravity="center" />
+        </FrameLayout>
+    </FrameLayout>
+</LinearLayout>

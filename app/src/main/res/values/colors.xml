@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0B65AD</color>
+    <color name="colorPrimaryDark">#0B65AD</color>
+    <color name="colorPrimaryBackground">#ECECEC</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="transparentColor">#00FFFFFF</color>
+
+    <color name="color_visited">#0B65AD</color>
+
+    <color name="cell_background_color">#ffffff</color>
+    <color name="header_line_color">#0a0a0a</color>
+    <color name="table_view_default_text_color">#0a0a0a</color>
+    <color name="color_header_footer">#ECE8DA</color>
+    <color name="color_odd_row">#F9F9F9</color>
+
+    <color name="color_white">#ffffff</color>
+    <color name="color_dim_white">#54020202</color>
+    <color name="color_black">#000000</color>
+
+    <color name="color_text_gray">#4A535E</color>
+    <color name="color_red">#F65255</color>
+    <color name="color_bg_common">#F3F3F3</color>
+    <color name="color_text_content">#47525E</color>
+    <color name="color_dialog_transparent">#CC6E6E6E</color>
+    <color name="color_grey">#878888</color>
+    <color name="color_light_grey">#F4F4F4</color>
+
+    <color name="color_tag_opening">#FF9052</color>
+    <color name="color_tag_confirm">#17992C</color>
+    <color name="color_tag_stop">#F6474A</color>
+
+    <color name="color_visit_item_1">#42C66C</color>
+    <color name="color_visit_item_2">#DFCB6A</color>
+    <color name="color_visit_item_3">#37ACE5</color>
+    <color name="color_visit_item_4">#0B65AD</color>
+    <color name="color_visit_item_5">#F9577A</color>
+
+    <color name="color_visit_closed">#FF0000</color>
+
+    <color name="color_blue">#096AFA</color>
+    <color name="color_purple">#673AB7</color>
+
+    <color name="color_camera">#96FFFFFF</color>
+
+    <color name="color_unconfirm">#FC4D50</color>
+    <color name="color_confirm">#018002</color>
+    <color name="color_issued">#42C66C</color>
+
+    <color name="color_yellow_card">#FFF4E1</color>
+    <color name="color_blue_card">#D3EAFF</color>
+
+    <color name="color_selector">#E0E0E0</color>
+    <color name="color_rippleSelector">#E6E6E6</color>
+    <color name="color_ripple">#C9C9C9</color>
+
+    <color name="white_two">#e6e6e6</color>
+    <color name="black_two">#CC191919</color>
+</resources>

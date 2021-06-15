@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_edt_round10"
+    android:layout_margin="5dp">
+
+    <TextView
+        android:id="@+id/tv_headerContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#C1C1C1"
+        android:paddingStart="16dp"
+        android:paddingEnd="1dp"
+        android:textColor="@color/color_black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="Header"
+        android:minHeight="50dp"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tv_headerContent"
+        >
+        <ImageView
+            android:id="@+id/img_iconType"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/icon_video"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <RelativeLayout
+            android:id="@+id/layout_text"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toEndOf="@+id/img_iconType"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/img_iconType"
+            app:layout_constraintBottom_toBottomOf="@+id/img_iconType"
+            android:layout_marginEnd="50dp">
+
+            <TextView
+                android:id="@+id/tv_videoName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/color_black"
+                android:layout_alignParentTop="true"
+                android:text="Video giới thiệu sản phẩm.mp4"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/tv_videoDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/color_black"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="5dp"
+                android:text="Modified 14 Apr 2020 - 12 mins - 150Mb"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            app:layout_constraintStart_toEndOf="@+id/layout_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/img_iconType"
+            app:layout_constraintBottom_toBottomOf="@+id/img_iconType"
+            android:layout_marginEnd="5dp">
+
+            <ImageView
+                android:id="@+id/img_downloadState"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/icon_download"
+                android:layout_alignParentTop="true" />
+
+            <ImageView
+                android:id="@+id/img_bookmarkState"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/icon_bookmark"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

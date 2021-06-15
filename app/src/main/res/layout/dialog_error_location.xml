@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:background="@drawable/bg_white_round10">
+
+    <RelativeLayout
+        android:id="@+id/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/icon_error"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_error" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/icon_error"
+            android:text="Error Detect Location"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/text_title_size"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@id/icon_error"
+            android:background="@color/colorPrimary" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_message"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_title"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="30dp"
+        android:text="@string/str_error_detect_location"
+        android:textColor="@color/color_black"
+        android:textSize="@dimen/text_title_size" />
+
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/tv_message"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/bg_dialog_positive_button"
+        android:elevation="5dp"
+        android:shadowColor="@color/color_black"
+        android:text="@string/str_ok"
+        android:textColor="@color/color_white" />
+</RelativeLayout>
+

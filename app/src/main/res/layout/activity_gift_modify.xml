@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        app:navigationIcon="@drawable/ic_action_back"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="?colorPrimary"
+        android:fitsSystemWindows="true"
+        android:minHeight="?actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include android:id="@+id/gift_name"
+            layout="@layout/item_detail"/>
+        <include android:id="@+id/gift_unit"
+            layout="@layout/item_detail"/>
+        <include android:id="@+id/quantity"
+            layout="@layout/item_detail"/>
+        <com.ziperp.dms.common.model.EditView
+            android:id="@+id/warehouse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="75dp"
+            app:title="@string/str_warehouse"
+            app:hint="@string/str_select_warehouse"
+            />
+        <include android:id="@+id/available_stock"
+            layout="@layout/item_detail"/>
+        <include android:id="@+id/promotion"
+            layout="@layout/item_detail"/>
+        <TextView
+            android:id="@+id/tv_content_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view2"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="4dp"
+            android:text="@string/str_note_content"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"/>
+        <EditText
+            android:id="@+id/tv_remark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_radius_border"
+            android:textSize="16sp"
+            android:textColor="@color/color_black"
+            android:layout_margin="4dp"
+            android:paddingTop="12dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="20dp"
+            android:imeOptions="actionDone"/>
+    </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/loading_progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_margin="10dp" />
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="?colorPrimary"
+        android:fitsSystemWindows="true"
+        android:minHeight="?actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:navigationIcon="@drawable/ic_action_back">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/layout_base"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:paddingLeft="12dp"
+        android:background="@color/color_white"
+        >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:lineSpacingMultiplier="1.29"
+            android:paddingVertical="8dp"
+            android:textColor="@color/color_text_visited_customer"
+            android:textSize="@dimen/text_title_size"
+            android:textStyle="bold"
+            tools:text="Công ty TNHH HumaxVina" />
+
+        <LinearLayout
+            android:id="@+id/layout_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_title"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal"
+            android:paddingVertical="2dp">
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:background="@drawable/round_corner_rectangle"
+                android:backgroundTint="#16A656"
+                android:src="@drawable/ic_location" />
+
+            <TextView
+                android:id="@+id/tv_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="7dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/text_standard_size" />
+        </LinearLayout>
+
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/layout_phone"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/layout_location"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:layout_marginBottom="10dp"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:paddingHorizontal="10dp"-->
+<!--            android:paddingVertical="2dp">-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="18dp"-->
+<!--                android:layout_height="18dp"-->
+<!--                android:background="@drawable/round_corner_rectangle"-->
+<!--                android:backgroundTint="#FF0B65AD"-->
+<!--                android:src="@drawable/ic_phone" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tv_phoneOfCustomerDetail"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center_vertical"-->
+<!--                android:layout_marginStart="7dp"-->
+<!--                android:gravity="center_vertical"-->
+<!--                android:textColor="@color/color_black"-->
+<!--                android:textSize="@dimen/text_standard_size"-->
+<!--                tools:text="+840987654321"-->
+<!--                />-->
+<!--        </LinearLayout>-->
+
+
+        <LinearLayout
+            android:id="@+id/layout_contact"
+            android:layout_below="@+id/layout_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="10dp"
+            android:weightSum="10">
+            <LinearLayout
+                android:id="@+id/layout_phone"
+                android:layout_width="0dp"
+                android:layout_weight="4.5"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout_location"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal"
+                android:paddingVertical="2dp">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:background="@drawable/round_corner_rectangle"
+                    android:backgroundTint="#FF0B65AD"
+                    android:src="@drawable/ic_phone" />
+
+                <TextView
+                    android:id="@+id/tv_phoneOfCustomerDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="7dp"
+                    android:gravity="center_vertical"
+                    tools:text=""
+                    android:textColor="@color/color_text_gray"
+                    android:textSize="@dimen/text_standard_size"
+                    android:maxLines="1"
+                    android:ellipsize="end"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_customer"
+                android:layout_width="0dp"
+                android:layout_weight="5.5"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout_location"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal"
+                android:paddingVertical="2dp">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:background="@drawable/bg_circle"
+                    android:backgroundTint="#F80A0A"
+                    android:src="@drawable/ic_person" />
+
+                <TextView
+                    android:id="@+id/tv_owner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="7dp"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:textColor="@color/color_text_gray"
+                    android:textSize="@dimen/text_standard_size" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_base"
+        android:layout_marginBottom="3dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_white"
+            android:elevation="8dp" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@color/color_white"
+            app:tabIndicatorHeight="3dp"
+            app:tabSelectedTextColor="@color/colorPrimaryDark"
+            app:tabTextAppearance="@style/TabTextAppearance" />
+    </RelativeLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_bar"
+        android:layout_below="@id/layout_tab"/>
+
+    <com.ziperp.dms.base.BaseBottomBar
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

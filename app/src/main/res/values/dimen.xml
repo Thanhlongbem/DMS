@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="cell_height">40dp</dimen>
+    <dimen name="text_size">12sp</dimen>
+
+    <!-- Overriding the default values of the tableView -->
+    <dimen name="default_row_header_width">55dp</dimen>
+    <dimen name="default_column_header_height">40dp</dimen>
+    <dimen name="row_header_width">55dp</dimen>
+    <dimen name="custom_profile_image">50dp</dimen>
+    <dimen name="custom_profile_padding">2dp</dimen>
+
+    <dimen name="text_title_size">16sp</dimen>
+    <dimen name="text_standard_size">14sp</dimen>
+    <dimen name="text_sub_info_size">12sp</dimen>
+</resources>

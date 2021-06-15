@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_item_bottom_bar">
+
+    <TextView
+        android:id="@+id/tv_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:text="Apply Promotion"
+        android:textColor="#47525E"
+        android:textSize="9sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/img_back"
+        app:layout_constraintBottom_toTopOf="@+id/tv_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/bg_circle"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/img_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/img_back"
+        app:layout_constraintEnd_toEndOf="@+id/img_back"
+        app:layout_constraintStart_toStartOf="@+id/img_back"
+        app:layout_constraintTop_toTopOf="@+id/img_back"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="9dp"
+        android:src="@drawable/ic_checkin_small" />
+</androidx.constraintlayout.widget.ConstraintLayout>

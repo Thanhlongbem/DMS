@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="?colorPrimary"
+        android:fitsSystemWindows="true"
+        android:minHeight="?actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:navigationIcon="@drawable/ic_action_back">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:background="@color/color_white">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/imagePager"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                app:layout_constraintTop_toTopOf="parent"
+                android:src="@drawable/image_default"
+                android:background="@drawable/bg_edt_round5_stroke2"/>
+
+            <ImageView
+                android:id="@+id/btnPrevious"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:layout_constraintLeft_toLeftOf="@id/imagePager"
+                app:layout_constraintTop_toTopOf="@id/imagePager"
+                app:layout_constraintBottom_toBottomOf="@id/imagePager"
+                android:src="@drawable/icon_previous"
+                />
+            <ImageView
+                android:id="@+id/btnNext"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:layout_constraintRight_toRightOf="@id/imagePager"
+                app:layout_constraintTop_toTopOf="@id/imagePager"
+                app:layout_constraintBottom_toBottomOf="@id/imagePager"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/icon_next"
+                />
+
+            <TextView
+                android:id="@+id/tv_fileNameTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="@string/str_file_name"
+                app:layout_constraintTop_toBottomOf="@+id/imagePager"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/color_black"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="15dp"/>
+
+            <TextView
+                android:id="@+id/tv_fileName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/tv_fileNameTitle"
+                android:textColor="@color/color_black"
+                android:textSize="16sp"
+                android:textColorHint="@color/color_black"
+                android:background="@drawable/bg_edt_bottom_line"
+                android:paddingStart="15dp"
+                android:paddingBottom="10dp"/>
+
+<!--            <TextView-->
+<!--                android:id="@+id/tv_fileNoteTitle"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/tv_fileName"-->
+<!--                android:text="@string/str_file_note"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:textSize="18sp"-->
+<!--                android:textColor="@color/color_black"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                android:layout_marginStart="15dp"/>-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tv_fileNoteContent"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@drawable/bg_radius_border"-->
+<!--                android:minHeight="100dp"-->
+<!--                android:gravity="start"-->
+<!--                android:padding="7dp"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/tv_fileNoteTitle"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:textSize="16sp"/>-->
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+    <ProgressBar
+        android:id="@+id/loading_progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp"
+        />
+
+</RelativeLayout>

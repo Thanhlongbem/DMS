@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_save"
+        android:tooltipText="@string/str_save"
+        app:showAsAction="always"
+        android:title="@string/str_save"
+        android:visible="false"
+        />
+
+    <item
+        android:id="@+id/action_edit"
+        android:tooltipText="@string/str_edit"
+        app:showAsAction="always"
+        android:title="@string/str_edit"
+        android:visible="false"
+        />
+
+    <item
+        android:id="@+id/action_add"
+        android:icon="@drawable/ic_add"
+        app:showAsAction="always"
+        android:title="@string/str_add"
+        android:visible="false"
+        />
+
+    <item
+        android:id="@+id/action_report"
+        android:icon="@drawable/ic_report"
+        app:showAsAction="always"
+        android:title="@string/str_report"
+        android:visible="false"
+        />
+
+    <item
+        android:id="@+id/action_location"
+        android:icon="@drawable/ic_location"
+        app:showAsAction="always"
+        android:title="@string/str_location"
+        android:visible="false"
+        />
+
+    <item
+        android:id="@+id/action_filter"
+        android:icon="@drawable/ic_filter"
+        app:showAsAction="always"
+        android:title="@string/str_sales_order"
+        android:visible="false"
+        />
+
+    <item
+        android:id="@+id/action_notification"
+        android:icon="@drawable/ic_notifcation"
+        android:title="@string/str_setting"
+        app:showAsAction="always"
+        android:visible="false"/>
+
+    <item
+        android:id="@+id/action_sync"
+        android:icon="@drawable/ic_synch"
+        android:title="@string/str_setting"
+        app:showAsAction="always"
+        android:visible="false"/>
+
+    <item
+        android:id="@+id/action_setting"
+        android:icon="@drawable/ic_action_setting"
+        android:title="@string/str_setting"
+        app:showAsAction="always"
+        android:visible="false"/>
+
+    <item
+        android:id="@+id/action_upload"
+        android:icon="@drawable/icon_upload"
+        android:title="Upload"
+        app:showAsAction="always"
+        android:visible="false"/>
+
+    <item
+        android:id="@+id/action_delete"
+        android:icon="@drawable/ic_delete"
+        android:title="Delete"
+        app:showAsAction="always"
+        android:visible="false"/>
+
+</menu>

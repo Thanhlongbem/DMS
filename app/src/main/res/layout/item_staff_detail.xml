@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:layout_marginBottom="4dp"
+    android:background="@drawable/round_bg_white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+        <LinearLayout
+            android:id="@+id/layout_activity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="5">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_running"/>
+            <TextView
+                android:id="@+id/tv_activity"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/str_visit_customer"
+                android:textSize="@dimen/text_standard_size"
+                android:textColor="@color/colorPrimary"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="7dp"
+            android:layout_weight="3">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:padding="1dp"
+                android:src="@drawable/icon_clock" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="7dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/color_text_gray"
+                android:textSize="@dimen/text_sub_info_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_battery"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="2">
+
+            <ImageView
+                android:id="@+id/img_battery"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/ic_super_low_battery"/>
+
+            <TextView
+                android:id="@+id/tv_battery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="7dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/color_text_gray"
+                android:textSize="@dimen/text_sub_info_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_visit_customer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="2dp"
+        android:layout_marginTop="5dp">
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:background="@drawable/icon_visit_customer"
+            android:backgroundTint="@color/color_confirm"
+            android:padding="1dp"/>
+
+        <TextView
+            android:id="@+id/tv_visit_customer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="7dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/color_text_gray"
+            android:textSize="@dimen/text_sub_info_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="2dp"
+        android:layout_marginTop="5dp">
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:background="@drawable/bg_circle"
+            android:backgroundTint="@color/colorPrimary"
+            android:src="@drawable/icon_location_white"
+            android:padding="1dp"/>
+
+        <TextView
+            android:id="@+id/tv_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="7dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/color_text_gray"
+            android:textSize="@dimen/text_sub_info_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="2dp"
+        android:layout_marginTop="5dp">
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:background="@drawable/icon_note_blue"
+            android:backgroundTint="@color/colorPrimary"
+            android:padding="1dp"/>
+
+        <TextView
+            android:id="@+id/tv_note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="7dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/color_text_gray"
+            android:textSize="@dimen/text_sub_info_size" />
+    </LinearLayout>
+
+</LinearLayout>

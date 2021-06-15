@@ -1,0 +1,90 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginBottom="4dp"
+    >
+
+    <RelativeLayout
+        android:id="@+id/layout_base"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="12dp"
+        android:background="@drawable/bg_edt_round10"
+        >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:lineSpacingMultiplier="1.29"
+            android:paddingVertical="5dp"
+            android:textColor="@color/color_text_visited_customer"
+            android:textSize="@dimen/text_title_size"
+            tools:text="Công ty TNHH HumaxVina" />
+
+        <RelativeLayout
+            android:id="@+id/layout_staff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_title"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="6dp"
+            android:orientation="horizontal"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="2dp">
+
+            <ImageView
+                android:id="@+id/ic_staff"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:background="@drawable/bg_circle"
+                android:backgroundTint="#E20004"
+                android:src="@drawable/ic_person" />
+
+            <TextView
+                android:id="@+id/tv_staff_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/ic_staff"
+                android:layout_marginStart="7dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/color_text_gray"
+                android:textSize="@dimen/text_standard_size"
+                tools:text="Trịnh Văn Dương" />
+
+            <TextView
+                android:id="@+id/tv_create_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="7dp"
+                android:textColor="@color/color_text_gray"
+                android:textSize="@dimen/text_standard_size"
+                tools:text="01/01/2020" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <FrameLayout
+        android:layout_width="1000dp"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_red">
+
+            <TextView
+                android:id="@+id/btn_delete"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="@string/str_delete"
+                android:textSize="16sp"
+                android:textColor="@android:color/white"
+                android:gravity="center" />
+        </FrameLayout>
+    </FrameLayout>
+</LinearLayout>

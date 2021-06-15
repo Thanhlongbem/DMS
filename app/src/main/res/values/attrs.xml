@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ActionBar">
+        <attr name="showBtnBack" format="boolean"/>
+        <attr name="showBtnMore" format="boolean"/>
+        <attr name="showBtnSetting" format="boolean"/>
+        <attr name="showBtnFilter" format="boolean"/>
+        <attr name="showBtnLocation" format="boolean"/>
+        <attr name="showBtnReport" format="boolean"/>
+
+        <attr name="titlePage" format="string|reference"/>
+    </declare-styleable>
+    <declare-styleable name="EditView">
+        <attr name="title" format="string|reference" />
+        <attr name="hint" format="string|reference" />
+        <attr name="isMandatory" format="boolean"/>
+        <attr name="isLocationPicker" format="boolean"/>
+        <attr name="isDateTimePicker" format="boolean"/>
+        <attr name="isEnable" format="boolean"/>
+        <attr name="isPhoneInput" format="boolean"/>
+        <attr name="isNumberInput" format="boolean"/>
+        <attr name="isPasswordInput" format="boolean"/>
+        <attr name="showDivider" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="DetailView">
+        <attr name="detail_title" format="string|reference" />
+        <attr name="detail_content" format="string|reference" />
+        <attr name="isPhone" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="SlidingItemMenuRecyclerView">
+        <!-- Deprecated! Use itemDraggable instead (if both itemScrollingEnabled and itemDraggable
+             are supplied, the value of the latter always wins). -->
+        <attr name="itemScrollingEnabled" format="boolean" />
+        <attr name="itemDraggable" format="boolean" />
+        <attr name="itemScrollDuration" format="integer" />
+    </declare-styleable>
+</resources>

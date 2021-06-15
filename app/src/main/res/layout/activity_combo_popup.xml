@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:maxHeight="300dp"
+    android:id="@+id/root_content"
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/tv_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_not_found_data"
+        android:textColor="@color/color_black"
+        android:textSize="@dimen/text_title_size"
+        android:layout_below="@id/recyclerView"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:visibility="gone"
+        />
+
+    <Button
+        android:id="@+id/but_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_empty"
+        android:text="OK"
+        android:background="@drawable/bg_radius_border"
+        android:textColor="@color/colorPrimary"
+        android:layout_margin="10dp" />
+
+    <ProgressBar
+        android:id="@+id/loading_progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp"
+        />
+
+</RelativeLayout>

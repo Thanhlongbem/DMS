@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/round_bg_white"
+        android:padding="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2dp"
+            android:background="@drawable/round_bg_white">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/icon_tick"
+                android:backgroundTint="@color/color_confirm"
+                android:padding="1dp" />
+
+            <TextView
+                android:id="@+id/tv_action"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="7dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/text_standard_size" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2dp"
+            android:background="@drawable/round_bg_white">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/icon_tick"
+                android:backgroundTint="@color/color_confirm"
+                android:padding="1dp" />
+
+            <TextView
+                android:id="@+id/tv_buy_step"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="7dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/text_standard_size" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2dp"
+            android:background="@drawable/round_bg_white">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/icon_tick"
+                android:backgroundTint="@color/color_confirm"
+                android:padding="1dp" />
+
+            <TextView
+                android:id="@+id/tv_max_gift"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="7dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/text_standard_size" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/round_bg_white"
+        android:layout_marginTop="4dp"
+        android:padding="5dp">
+        <LinearLayout
+            android:id="@+id/layout_gift"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:paddingHorizontal="2dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/icon_apply_promotion"
+                android:backgroundTint="@color/color_red"
+                android:layout_marginLeft="1dp"/>
+
+            <TextView
+                android:id="@+id/tv_gift"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="7dp"
+                android:paddingRight="5dp"
+                android:text="@string/str_gifts"
+                android:gravity="center_vertical"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/text_standard_size"/>
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_list_gift"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_gift"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_no_gift"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_gift"
+            android:textSize="@dimen/text_standard_size"
+            android:textColor="@color/color_black"
+            android:text="@string/str_no_gift"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/round_bg_white"
+        android:layout_marginTop="4dp"
+        android:padding="5dp">
+        <LinearLayout
+            android:id="@+id/layout_condition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:paddingHorizontal="2dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/icon_note_blue"/>
+
+            <TextView
+                android:id="@+id/tv_condition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="7dp"
+                android:paddingRight="5dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/text_standard_size"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_list_condition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            />
+    </LinearLayout>
+</LinearLayout>

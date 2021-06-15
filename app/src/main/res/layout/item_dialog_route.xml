@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/layout_route"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:background="@color/color_white"
+    android:layout_marginBottom="3dp">
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_centerVertical="true"
+        android:buttonTint="@color/colorPrimary"/>
+
+    <TextView
+        android:id="@+id/tv_route_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/checkbox"
+        android:layout_marginLeft="10dp"
+        android:text="TEST"
+        android:textStyle="bold"
+        android:textColor="@color/color_black"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_toRightOf="@id/checkbox"
+        android:layout_below="@+id/tv_route_name"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical">
+        <ImageView
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:background="@drawable/round_corner_rectangle"
+            android:backgroundTint="#F80A0A"
+            android:src="@drawable/ic_person" />
+        <TextView
+            android:id="@+id/tv_owner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TEST"
+            android:layout_marginLeft="7dp"
+            android:textColor="@color/color_text_gray"/>
+    </LinearLayout>
+</RelativeLayout>

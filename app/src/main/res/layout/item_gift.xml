@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_edt_round10"
+    android:paddingStart="5dp"
+    android:paddingEnd="5dp"
+    android:paddingBottom="10dp"
+    android:layout_marginBottom="7dp">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/line_ver_parent_0.25"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/line_ver_parent_0.4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/line_ver_parent_0.55"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.55" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/line_ver_parent_0.65"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.65" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/line_ver_parent_0.7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.7" />
+
+    <TextView
+        android:id="@+id/tv_itemName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:textColor="@color/color_black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/line_ver_parent_0.65"
+        android:layout_marginTop="5dp"
+        android:text="PMH-5TR - Phiếu mua hàng 5 triệu"
+        />
+
+    <CheckBox
+        android:id="@+id/cb_getGift"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:background="@drawable/bg_btn_blue_stroke2"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="@string/str_get_gift"
+        android:paddingEnd="10dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:textColor="@color/color_text_blue"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        android:button="@android:color/transparent"
+        android:paddingStart="5dp"
+        android:drawablePadding="5dp"
+        android:drawableLeft="@drawable/checkbox_selector"
+        android:layout_marginTop="5dp"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/tv_unitTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tv_itemName"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="12dp"
+        android:textSize="12sp"
+        android:textColor="@color/color_text_gray"
+        android:text="@string/str_unit" />
+
+    <TextView
+        android:id="@+id/tv_unitValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/tv_unitTitle"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_unitTitle"
+        app:layout_constraintStart_toEndOf="@+id/line_ver_parent_0.25"
+        app:layout_constraintEnd_toStartOf="@+id/line_ver_parent_0.4"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp"
+        android:textSize="12sp"
+        android:textColor="@color/color_black"
+        android:text="Phiếu"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tv_quantityTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="@color/color_text_gray"
+        android:text="@string/str_quantity"
+        app:layout_constraintTop_toTopOf="@+id/tv_unitTitle"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_unitTitle"
+        app:layout_constraintStart_toEndOf="@+id/line_ver_parent_0.4" />
+
+    <TextView
+        android:id="@+id/tv_quantityValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/tv_unitTitle"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_unitTitle"
+        app:layout_constraintStart_toEndOf="@+id/tv_quantityTitle"
+        app:layout_constraintEnd_toStartOf="@+id/line_ver_parent_0.7"
+        android:textSize="12sp"
+        android:textColor="@color/color_black"
+        android:text="15.00"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="3dp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/tv_availQty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="@color/color_text_gray"
+        android:text="@string/str_avail_qty"
+        app:layout_constraintTop_toTopOf="@+id/tv_unitTitle"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_unitTitle"
+        app:layout_constraintStart_toEndOf="@+id/line_ver_parent_0.7" />
+
+    <TextView
+        android:id="@+id/tv_availQtyValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/tv_unitTitle"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_unitTitle"
+        app:layout_constraintStart_toEndOf="@+id/tv_availQty"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="12sp"
+        android:textColor="@color/color_black"
+        android:text="15.00"
+        android:gravity="right"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_warehouseTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tv_unitTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp"
+        android:textSize="12sp"
+        android:textColor="@color/color_text_gray"
+        android:text="@string/str_warehouse" />
+
+    <TextView
+        android:id="@+id/tv_warehouseValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/tv_warehouseTitle"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_warehouseTitle"
+        app:layout_constraintStart_toEndOf="@+id/line_ver_parent_0.25"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp"
+        android:textSize="12sp"
+        android:textColor="@color/color_black"
+        android:text="Kho Hà Nội - Hàng bán"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tv_parentItemTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tv_warehouseTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp"
+        android:textSize="12sp"
+        android:textColor="@color/color_text_gray"
+        android:text="@string/str_parent_item" />
+
+    <TextView
+        android:id="@+id/tv_parentItemValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/tv_parentItemTitle"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_parentItemTitle"
+        app:layout_constraintStart_toEndOf="@+id/line_ver_parent_0.25"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp"
+        android:textSize="12sp"
+        android:textColor="@color/color_black"
+        android:text="Inada_MS01 - Ghế Massage Inada"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tv_promotionTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tv_parentItemTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp"
+        android:textSize="12sp"
+        android:textColor="@color/color_text_gray"
+        android:text="@string/str_promotion" />
+
+    <TextView
+        android:id="@+id/tv_promotionValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/tv_promotionTitle"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_promotionTitle"
+        app:layout_constraintStart_toEndOf="@+id/line_ver_parent_0.25"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp"
+        android:textSize="12sp"
+        android:textColor="#FF2F33"
+        android:text="Mua ghế tặng quà"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/icon_apply_promo"
+        android:tint="#FF2F33"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

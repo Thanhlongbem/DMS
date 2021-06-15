@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="8dp"
+    android:background="#00ffffff">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:padding="8dp"
+        android:background="@drawable/bg_round10_stroke"
+        android:minWidth="250dp">
+
+        <TextView
+            android:id="@+id/txt_customer_name"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            tools:text="NHÀ THUỐC THU TRANG"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginEnd="10dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/layout_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/txt_customer_name"
+            android:gravity="center"
+            android:layout_marginTop="7dp">
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:background="@drawable/round_corner_rectangle"
+                android:backgroundTint="#16A656"
+                android:src="@drawable/ic_location" />
+
+            <TextView
+                android:id="@+id/tvAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/color_black"
+                tools:text="111 QUỐC LỘ 9, PHƯỜNG 5, TP.ĐÔNG HÀ, QUẢNG TRỊ"
+                android:layout_marginStart="8dp"
+                android:maxLines="2"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_phone_and_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/layout_address"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:id="@+id/layout_phone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/layout_address"
+                android:layout_marginTop="5dp">
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:background="@drawable/round_corner_rectangle"
+                    android:backgroundTint="#FF0B65AD"
+                    android:src="@drawable/ic_phone" />
+
+                <TextView
+                    android:id="@+id/tvPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/color_black"
+                    tools:text="012"
+                    android:layout_marginStart="8dp"
+                    android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_user"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/layout_address"
+                android:layout_marginTop="5dp">
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:background="@drawable/bg_circle"
+                    android:backgroundTint="@color/color_red"
+                    android:src="@drawable/ic_person" />
+
+                <TextView
+                    android:id="@+id/txt_rep"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/color_black"
+                    tools:text="Bùi Thị Thu Trang"
+                    android:layout_marginStart="8dp"
+                    android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/layout_distance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/layout_phone_and_name"
+            android:gravity="center"
+            android:layout_marginTop="5dp">
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/icon_distance"
+                />
+
+            <TextView
+                android:id="@+id/tvDistance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/color_black"
+                tools:text="500 km"
+                android:layout_marginStart="8dp"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_direction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/layout_distance"
+            android:gravity="center"
+            android:layout_marginTop="10dp">
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/ic_map_direction"
+                />
+
+            <TextView
+                android:id="@+id/tvDirection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="#0036BB"
+                android:text="Tìm đường đến đây"
+                android:layout_marginStart="8dp"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
